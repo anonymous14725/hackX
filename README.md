@@ -35,6 +35,6 @@ For Install must write commands<br>
 <code>chmod +x hackx.run</code><br>
 <code>./hackx.run</code><br>
 
-`Warning:You must app in put original page or write Command (mv [NAME FILE] to ~/) <br>
-Attantion:You must access to root , with command (su) and write your password
+__Warning:You must app in put original page or write Command (mv [NAME FILE] to ~/) <br>
+Attantion:You must access to root , with command (su) and write your password__ 
 
