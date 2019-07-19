@@ -35,7 +35,7 @@ int main(){
 		system("pacman -S git");
 		system("pkg install git");
 		system("pkg_add git");
-		system("git clone https://github.com/cyweb/hammer.git");
+ 		system("git clone https://github.com/cyweb/hammer.git");
 		system("mv ~/hackX/hammer/hammer.py ~/hackX/");
 		system("mv ~/hackX/hammer/headers.txt ~/hackX/");
 		system("mv ~/hackX/hammer/README.md ~/hackX/");
