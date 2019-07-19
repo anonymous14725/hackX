@@ -32,5 +32,7 @@ For Install must write commands<br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
 <code>cd hackX</code><br>
 <code>./hackx.run</code><br>
+for Download application full, https://github.com/anonymous14725/hackX/archive/Data.zip on click
 Warning:You must app in put original page or write Command (mv [NAME FILE] to ~/) <br>
 Attantion:You must access to root , with command (su) and write your password
+
