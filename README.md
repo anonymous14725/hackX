@@ -25,8 +25,6 @@ For download must write commands<br>
 <b>5.FreeBSD and Termux</b><br>
 <code>pkg update</code><br>
 <code>pkg install git</code><br>
-<code>pkg install clang++</code><br>
-<code>pkg install clang</code><br>
 <b>6.OpenBSD</b><br>
 <code>pkg_add git</code><br>
 # Install Application
@@ -36,8 +34,14 @@ For Install must write commands<br>
 <code>unzip Data.zip</code><br>
 <code>chmod +x hackx.run</code><br>
 <code>./hackx.run</code><br>
+__and Install in freebsd__<br>
+<code>cd hackX</code><br>
+<code>clang++ hackx.cpp</code>
+<code>./a.out</code><br>
 # Install in Termux
 For install in Termux must write commands under<br>
+<code>pkg install clang</code><br>
+<code>pkg install clang++</code><br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
 <code>cd hackX</code><br>
 <code>unzip Data.zip</code><br>
