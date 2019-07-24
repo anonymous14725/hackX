@@ -22,7 +22,7 @@ For download must write commands<br>
 <b>4.Arch Linux and BlackArch</b><br>
 <code>pacman -Syu</code><br>
 <code>pacman -S git</code><br>
-<b>5.FreeBSD</b><br>
+<b>5.FreeBSD and Termux</b><br>
 <code>pkg update</code><br>
 <code>pkg install git</code><br>
 <code>pkg install clang++</code><br>
