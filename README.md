@@ -35,7 +35,7 @@ For Install must write commands<br>
 <code>chmod +x hackx.run</code><br>
 <code>./hackx.run</code><br>
 # Install in termux
-For install in termux must write commands under
+For install in termux must write commands under<br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
 <code>cd hackX</code><br>
 <code>unzip Data.zip</code><br>
