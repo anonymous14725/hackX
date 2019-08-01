@@ -48,5 +48,5 @@ For install in Termux must write commands under<br>
 <code>g++ hackx.cpp</code><br>
 <code>./a.out</code><br>
 __Warning:You must app in put original page or write Command (mv [NAME FILE] to ~/) <br>
-Attantion:You must access to root , with command (su) and write your password__ 
+Attantion:You must access to root , with command (su) and write your password__ <br>
 __For access to root in Ubuntu, you must Command <code>sudo -s</code>and enter your password .__
