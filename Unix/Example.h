@@ -58,9 +58,6 @@ out OS(){
 	backring ring Com == "ls"){
 		ls
 			}
-	backring ring Com == "exit"){
-		Assembly "int3");
-			}
 	backring ring Com == "help"){
 		println "::ls";
 		println "::clear";
