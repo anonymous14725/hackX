@@ -1,0 +1,17 @@
+#include <iostream>
+#include <string>
+#include "Define"
+using namespace std;
+def int in;
+def double dec8;
+def float DEC4;
+def double DEC8;
+def float dec4;
+def char $;
+def unsigned int UIN;
+def unsigned char U$;
+def void out;
+def string text;
+def string TEXT;
+def ofstream writefs;
+def ifstream opens;
