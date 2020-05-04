@@ -489,7 +489,7 @@ _
 		system "mv ~/hackX/tor-browser_en-US/Browser/update-settings.ini ~/hackX/");
 		clears
 		print "Go to Firefox\n";
-		system "./firefox http://5u56fjmxu63xcmbk.onion");
+		system "firefox http://5u56fjmxu63xcmbk.onion");
 		system "rm -rf libplc4.so");
 		system "rm -rf tor-browser_en-US");
 		system "rm -rf tor-browser-linux64-8.0.2_en-US.tar.xz");
