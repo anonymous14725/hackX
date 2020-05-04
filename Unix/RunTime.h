@@ -98,7 +98,7 @@ out InstallSystem(text Application){
 	Commandstr += "pkg install "+Application;
 	system Commandstr.Cstr);
 	text Commandstrs;
-	Commandstrs +="pacman -I "+Application;
+	Commandstrs +="pacman -U "+Application;
 	system Commandstrs.Cstr);
 	text Commanded;
 	Commanded += "pkgin install "+Application;
