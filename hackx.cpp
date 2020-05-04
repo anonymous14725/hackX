@@ -17,7 +17,7 @@ _
 	print "| \033[1;32m1)Attack DDOS\033[1;m" << "\n| \033[1;32m2)Create the Virus\033[1;m" << "\n| \033[1;32m3)Get Proxy\033[1;m" << "\n| \033[1;32m4)Cracker Instagram\033[1;m" << "\n| \033[1;32m5)Find the Username of the Admin Website\033[1;m" << "\n| \033[1;32m6)Find IP Website\033[1;m" << "\n| \033[1;32m7)Attack SQL Injection\033[1;m" << "\n| \033[1;32m8)Website Template\033[1;m" << "\n| \033[1;32m9)Attack XSS\033[1;m" << "\n| \033[1;32m10)Create Paassword List\033[1;m" << "\n| \033[1;32m11)Checker SSL Websites\033[1;m";
 	print "\n\n| \033[1;34m50)Debug\033[1;m" << "\n| \033[1;34m51)Change Password Router\033[1;m" << "\n| \033[1;34m52)Go to DarkWeb\033[1;m" << "\n| \033[1;34m53)View Source\033[1;m"<< "\n| \033[1;34m54)Test Internet Speed\033[1;m";
 	
-	print string(5 , '\n'); 
+	print string(4 , '\n'); 
 	print "\033[1;36m99)About______________________________100)Update\033[1;m" << nline;
 	print "\n \nPlease Enter Number:";
 	sent n;
