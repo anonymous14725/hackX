@@ -5,9 +5,9 @@ This application for hackers without command and without learn is programing lan
 Just open the terminal and write the following commands to download and install the program<br>
 <i>This program is only for Linux and run is all Linux versions</i>
 # Gallery HackX
- <img src="http://uupload.ir/files/92fl_screenshot_from_2019-07-18_19-56-43.png"></img><br>
- <img src="http://uupload.ir/files/a584_screenshot_from_2019-07-18_19-53-04.png"></img><br>
- <img src="http://uupload.ir/files/pvee_screenshot_from_2019-07-18_19-56-14.png"></img>
+ <img src="http://uupload.ir/files/92fl_screenshot_from_2019-07-18_19-56-43.png"><br>
+ <img src="http://uupload.ir/files/a584_screenshot_from_2019-07-18_19-53-04.png"><br>
+ <img src="http://uupload.ir/files/pvee_screenshot_from_2019-07-18_19-56-14.png">
 # Download Help
 For download must write commands<br>
 <b>1.Debian Linux and Kali Linux and Ubuntu</b><br>
