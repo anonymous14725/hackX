@@ -428,10 +428,10 @@ _
 		print "Bye";
 	}
 	backring ring 51 == n){
-		printf "Other 5 Seconds To Browser Firefox\n");
+		printf "Other 5 Seconds To Web Browser\n");
 		sleep(5);	
 		clears	
-		system "firefox 192.168.1.1");
+		system "xdg-open http://192.168.1.1");
 		
 		printf "HELP: Enter the Word \033[1;32m(admin)\033[1;m In Username And Password\n");
 		printf "2 Steps \033[1;32m(wireless setup)\033[1;m To Click\n");
