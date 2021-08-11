@@ -422,6 +422,7 @@ _
 	}
 	backring ring 50 == n){
 		system "rm -rf /var/cache/apt/archives/lock");
+		system "rm -rf /var/lib/pacman/db.lck");
 		clears
 		printf "Debug Successful\n \a");
 		print __TIME__ << nline;
