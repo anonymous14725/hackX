@@ -31,7 +31,6 @@ For download must write commands<br>
 For Install must write commands<br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
 <code>cd hackX</code><br>
-<code>unzip Data.zip</code><br>
 <code>chmod +x hackx.run</code><br>
 <code>./hackx.run</code><br>
 __and Install in freebsd__<br>
@@ -45,7 +44,6 @@ For install in Termux must write commands under<br>
 <code>pkg install git</code><br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
 <code>cd hackX</code><br>
-<code>unzip Data.zip</code><br>
 <code>g++ hackx.cpp</code><br>
 <code>./a.out</code><br>
 __Warning:You must app in put original page or write Command (mv [NAME FILE] to ~/) <br>
