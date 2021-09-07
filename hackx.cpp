@@ -385,7 +385,7 @@ int main()
 		remove ("sqlmap-dev");
 		remove ("COMMITMENT");
 		remove ("doc");
-		remove ("lib")
+		remove ("lib");
 		remove ("plugins");
 		remove ("sqlmapapi.py");
 		remove ("sqlmap.py");
