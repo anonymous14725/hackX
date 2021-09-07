@@ -34,7 +34,7 @@ void InstallSystem(string Application)
 	system (Commanded.c_str());
 	
 	string Commanding;
-	Comanding += "brew install "+Application;
+	Commanding += "brew install "+Application;
 	system (Commanding.c_str());
 }
 
