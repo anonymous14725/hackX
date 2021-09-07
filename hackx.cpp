@@ -47,6 +47,7 @@ void UpgradeSystem()
 	system("pacman -U");
 	system("yum upgrade");
 	system("pkgin upgrade");
+	system("brew upgrade");
 }
 
 /*System code for update and install*/
@@ -58,6 +59,7 @@ void UpdateSystem()
 	system("pacman -U");
 	system("yum update");
 	system("pkgin update");
+	system("brew update");
 }
 
 int main()
