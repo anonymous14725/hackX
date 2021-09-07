@@ -1,4 +1,0 @@
-#include "import"
-
-_ print"hello world";
-End
