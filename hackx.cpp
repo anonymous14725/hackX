@@ -32,6 +32,10 @@ void InstallSystem(string Application)
 	string Commanded;
 	Commanded += "pkgin install "+Application;
 	system (Commanded.c_str());
+	
+	string Commanding;
+	Comanding += "brew install "+Application;
+	system (Commanding.c_str());
 }
 
 /*Upgrade system in Linux console*/
