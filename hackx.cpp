@@ -695,6 +695,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
+		remove ("hackX");
 	}
 	else if ( 100 == n)
 	{
@@ -707,7 +708,7 @@ int main()
 		system ("mv ~/hackX/hackX/hackx.cpp ~/hackX");
 		system ("unzip Data.zip");
 		system ("chmod +x hackx.run");
-		remove ("hackX");
+		system ("rm -rf hackX");
 		remove ("Data.zip");
 		system ("g++ hackx.cpp");
 		system ("clang++ hackx.cpp");
