@@ -12,18 +12,23 @@ void InstallSystem(string Application)
 	string Command;
 	Command += "sudo apt install "+Application;
 	system (Command.c_str());
+	
 	string Commands;
 	Commands +="apt-get install "+Application;
 	system (Commands.c_str());
+	
 	string Commandst;
 	Commandst +="yum install "+Application;
 	system (Commandst.c_str());
+	
 	string Commandstr;
 	Commandstr += "pkg install "+Application;
 	system (Commandstr.c_str());
+	
 	string Commandstrs;
 	Commandstrs +="pacman -U "+Application;
 	system (Commandstrs.c_str());
+	
 	string Commanded;
 	Commanded += "pkgin install "+Application;
 	system (Commanded.c_str());
@@ -84,7 +89,10 @@ int main()
 		string num;
 		InstallSystem("python3");
 		InstallSystem("git");
+ 		system ("git clone https://github.com/cyweb/hammer");
+ 		#ifndef __linux__
  		system ("git clone git://github.com/cyweb/hammer.git");
+ 		#endif
 		system ("mv ~/hackX/hammer/hammer.py ~/hackX/");
 		system ("mv ~/hackX/hammer/headers.txt ~/hackX/");
 		system ("mv ~/hackX/hammer/README.md ~/hackX/");
@@ -245,15 +253,20 @@ int main()
 			cout <<  __TIME__ << endl;
 			cout <<  "Bye";
 		}
-		else{
-		printf ("\033[1;31m((((([[[[[[Unsuccess In Load]]]]])))))\033[1;m\n \a");
-		cout <<  __TIME__ << endl;
-		cout <<  "Bye";
+		else
+		{
+			printf ("\033[1;31m((((([[[[[[Unsuccess In Load]]]]])))))\033[1;m\n \a");
+			cout <<  __TIME__ << endl;
+			cout <<  "Bye";
 		}
 	}
-	else if ( 3 == n){
+	else if ( 3 == n)
+	{
 		InstallSystem("git");
+		system ("git clone https://github.com/stamparm/fetch-some-proxies");
+		#ifndef __linux__
 		system ("git clone git://github.com/stamparm/fetch-some-proxies.git");
+		#endif
 		system ("mv ~/hackX/fetch-some-proxies/fetch.py ~/hackX/");
 		system ("clear");
 		system ("python2 fetch.py --threads=300");
@@ -264,33 +277,41 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 		}
-	else if ( 4 == n){
+	else if ( 4 == n)
+	{
 		InstallSystem("git");
+		system ("git clone https://github.com/thelinuxchoice/instainsane");
+		#ifndef __linux__
 		system ("git clone git://github.com/thelinuxchoice/instainsane.git");
+		#endif
 		system ("mv ~/hackX/instainsane/instainsane.sh ~/hackX/");
 		system ("mv ~/hackX/instainsane/install.sh ~/hackX/");
 		system ("mv ~/hackX/instainsane/passwords.lst ~/hackX");
-		system ("rm -rf instainsane");
+		remove ("instainsane");
 		system ("chmod +x install.sh");
 		system ("./install.sh");
 		system ("chmod +x instainsane.sh");
 		system ("./instainsane.sh");
 		system ("gedit found.instainsane");
 		system ("nano found.instainsane");
-		system ("rm -rf nottested.lst");
-		system ("rm -rf install.sh");
-		system ("rm -rf instainsane.sh");
-		system ("rm -rf passwords.lst");
-		system ("rm -rf multitor");
+		remove ("nottested.lst");
+		remove ("install.sh");
+		remove ("instainsane.sh");
+		remove ("passwords.lst");
+		remove ("multitor");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 5 == n){
+	else if ( 5 == n)
+	{
 		string s2;
 		string str2;
 		InstallSystem("git");
+		system ("git clone https://github.com/s0md3v/Breacher");
+		#ifndef __linux__
 		system ("git clone git://github.com/s0md3v/Breacher.git");
+		#endif
 		system ("mv ~/hackX/Breacher/breacher.py ~/hackX/");
 		system ("mv ~/hackX/Breacher/paths.txt ~/hackX/");
 		system ("mv ~/hackX/Breacher/LICENSE ~/hackX/");
@@ -302,15 +323,16 @@ int main()
 		const char * commands = str2.c_str();
 			
 		system (commands); 
-		system ("rm -rf Breacher");
-		system ("rm -rf breacher.py");
-		system ("rm -rf paths.txt");
-		system ("rm -rf LICENSE");
+		remove ("Breacher");
+		remove ("breacher.py");
+		remove ("paths.txt");
+		remove ("LICENSE");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 		}
-	else if ( 6 == n){
+	else if ( 6 == n)
+	{
 		string s3;
 		string str3;
 		
@@ -328,13 +350,17 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 		}
-	else if ( 7 == n){
+	else if ( 7 == n)
+	{
 		string s4;
 		string str4;
 		InstallSystem("git");
 		InstallSystem("python");
 		InstallSystem("python2");
+		system ("git clone --depth 1 https://github.com/sqlmapproject/sqlmap sqlmap-dev");
+		#ifndef __linux__
 		system ("git clone --depth 1 git://github.com/sqlmapproject/sqlmap.git sqlmap-dev");
+		#endif
 		system ("mv ~/hackX/sqlmap-dev/COMMITMENT ~/hackX/");
 		system ("mv ~/hackX/sqlmap-dev/doc ~/hackX/");
 		system ("mv ~/hackX/sqlmap-dev/lib ~/hackX/");
@@ -356,20 +382,20 @@ int main()
 		const char * commands = str4.c_str();
 			
 		system (commands);
-		remove("sqlmap-dev");
-		remove("COMMITMENT");
-		remove("doc");
-		system ("rm -rf lib");
-		system ("rm -rf plugins");
-		system ("rm -rf sqlmapapi.py");
-		system ("rm -rf sqlmap.py");
-		system ("rm -rf thirdparty");
-		system ("rm -rf data");
-		system ("rm -rf extra");
-		system ("rm -rf LICENSE");
-		system ("rm -rf README.md");
-		system ("rm -rf sqlmap.conf");
-		system ("rm -rf tamper");
+		remove ("sqlmap-dev");
+		remove ("COMMITMENT");
+		remove ("doc");
+		remove ("lib")
+		remove ("plugins");
+		remove ("sqlmapapi.py");
+		remove ("sqlmap.py");
+		remove ("thirdparty");
+		remove ("data");
+		remove ("extra");
+		remove ("LICENSE");
+		remove ("README.md");
+		remove ("sqlmap.conf");
+		remove ("tamper");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
@@ -399,7 +425,10 @@ int main()
 		InstallSystem("python");
 		InstallSystem("python2");
 		InstallSystem("python-pip");
+		system ("git clone https://github.com/epsylon/xsser");
+		#ifndef __linux__
 		system ("git clone git://github.com/epsylon/xsser.git");
+		#endif
 		InstallSystem("python-pycurl");
 		InstallSystem("python-xmlbuilder");
 		InstallSystem("python-beautifulsoup");
@@ -423,15 +452,15 @@ int main()
 
 		const char *commands = str6.c_str();
 		system (commands);
-		system ("rm -rf xsser.egg-info");
-		system ("rm -rf build");
-		system ("rm -rf doc");
-		system ("rm -rf gtk");
-		system ("rm -rf core");
-		system ("rm -rf hackXSS");
-		system ("rm -rf setup.py");
-		system ("rm -rf Makefile");
-		system ("rm -rf xsser");
+		remove ("xsser.egg-info");
+		remove ("build");
+		remove ("doc");
+		remove ("gtk");
+		remove ("core");
+		remove ("hackXSS");
+		remove ("setup.py");
+		remove ("Makefile");
+		remove ("xsser");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
@@ -441,7 +470,10 @@ int main()
 		InstallSystem("python");
 		InstallSystem("python2");
 		InstallSystem("git");
+		system ("git clone https://github.com/Mebus/cupp");
+		#ifndef __linux__
 		system ("git clone git://github.com/Mebus/cupp.git");
+		#endif
 		system ("mv ~/hackX/cupp/CHANGELOG.md ~/hackX/");
 		system ("mv ~/hackX/cupp/cupp.cfg ~/hackX/");
 		system ("mv ~/hackX/cupp/cupp.py ~/hackX/");
@@ -450,25 +482,29 @@ int main()
 		system ("mv ~/hackX/cupp/test_cupp.py ~/hackX/");
 		system ("clear");
 		system ("./cupp.py -i");
-		system ("rm -rf cupp");
-		system ("rm -rf CHANGELOG.md");
-		system ("rm -rf cupp.cfg");
-		system ("rm -rf cupp.py");
-		system ("rm -rf LICENSE");
-		system ("rm -rf README.md");
-		system ("rm -rf test_cupp.py");
+		remove ("cupp");
+		remove ("CHANGELOG.md");
+		remove ("cupp.cfg");
+		remove ("cupp.py");
+		remove ("LICENSE");
+		remove ("README.md");
+		remove ("test_cupp.py");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 11 == n){
+	else if ( 11 == n)
+	{
 		string str8;
 		string s8;
 		InstallSystem("git");
 		InstallSystem("python");
 		InstallSystem("python2");
 		InstallSystem("python-pip");
+		system ("git clone https://github.com/narbehaj/ssl-checker");
+		#ifndef __linux__
 		system ("git clone git://github.com/narbehaj/ssl-checker.git");
+		#endif
 		system ("mv ~/hackX/ssl-checker/LICENSE ~/hackX/");
 		system ("mv ~/hackX/ssl-checker/README.md ~/hackX/");
 		system ("mv ~/hackX/ssl-checker/requirements.txt ~/hackX/");
@@ -484,25 +520,27 @@ int main()
 
 		const char *commands = str8.c_str();
 		system (commands);
-		system ("rm -rf LICENSE");
-		system ("rm -rf README.md");
-		system ("rm -rf requirements.txt");
-		system ("rm -rf socks.py");
-		system ("rm -rf ssl_checker.py");
-		system ("rm -rf ssl-checker");
+		remove ("LICENSE");
+		remove ("README.md");
+		remove ("requirements.txt");
+		remove ("socks.py");
+		remove ("ssl_checker.py");
+		remove ("ssl-checker");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 50 == n){
-		system ("rm -rf /var/cache/apt/archives/lock");
-		system ("rm -rf /var/lib/pacman/db.lck");
+	else if ( 50 == n)
+	{
+		remove ("/var/cache/apt/archives/lock");
+		remove ("/var/lib/pacman/db.lck");
 		system ("clear");
 		printf ("Debug Successful\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 51 == n){
+	else if ( 51 == n)
+	{
 		printf ("Other 5 Seconds To Web Browser\n");
 		sleep(5);	
 		system ("clear");	
@@ -515,7 +553,8 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 52 == n){
+	else if ( 52 == n)
+	{
 		system ("wget https://github.com/TheTorProject/gettorbrowser/releases/download/v8.0.2/tor-browser-linux64-8.0.2_en-US.tar.xz");
 		system ("tar -xf tor-browser-linux64-8.0.2_en-US.tar.xz");
 		system ("mv ~/hackX/tor-browser_en-US/Browser/abicheck ~/hackX/");
@@ -615,7 +654,8 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 53 == n){
+	else if ( 53 == n)
+	{
 		string str7;
 		string s7;
 		system ("exit");
@@ -632,7 +672,8 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 54 == n){
+	else if ( 54 == n)
+	{
 		string str9;
 		string s9;
 		system ("clear");
@@ -645,7 +686,8 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 99 == n){
+	else if ( 99 == n)
+	{
 		system ("clear");
 		cout <<  string(6 , '\n');
 		cout <<  "                   Designer:Cunknown" << endl;
@@ -654,21 +696,25 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 100 == n){
-		
+	else if ( 100 == n)
+	{
+		system ("git clone https://github.com/anonymous14725/hackX");
+		#ifndef __linux__
 		system ("git clone git://github.com/anonymous14725/hackX.git");
+		#endif
 		system ("mv ~/hackX/hackX/hackx.run ~/hackX");
 		system ("mv ~/hackX/hackX/Data.zip ~/hackX");
 		system ("mv ~/hackX/hackX/hackx.cpp ~/hackX");
 		system ("unzip Data.zip");
 		system ("chmod +x hackx.run");
-		system ("rm -rf hackX");
-		system ("rm -rf Data.zip");
+		remove ("hackX");
+		remove ("Data.zip");
 		system ("g++ hackx.cpp");
 		system ("clang++ hackx.cpp");
 		system ("./a.out");
 	}
-	else{
+	else
+	{
 		printf ("\033[1;31m((((([[[[[[Unsuccess In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
