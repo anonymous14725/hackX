@@ -502,7 +502,9 @@ int main()
 		InstallSystem("git");
 		InstallSystem("python");
 		InstallSystem("python2");
+		InstallSystem("python3");
 		InstallSystem("python-pip");
+		InstallSystem("python3-pip");
 		system ("git clone https://github.com/narbehaj/ssl-checker");
 		#ifndef __linux__
 		system ("git clone git://github.com/narbehaj/ssl-checker.git");
@@ -514,6 +516,7 @@ int main()
 		system ("mv ssl-checker/socks.pyc ../hackX/");
 		system ("mv ssl-checker/ssl_checker.py ../hackX/");
 		system ("pip install -r requirements.txt");
+		system ("pip3 install -r requirements.txt");
 		system ("clear");
 		cout <<  "Enter Website for Check SSL:";
 		cin >> s8;
