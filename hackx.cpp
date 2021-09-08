@@ -452,7 +452,7 @@ int main()
 		cout <<  "Please Enter Website for Attack:";
 		cin >> s6;
 		
-		str6="./hackXSS --all "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --follow-redirects --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dcp --Ind --Doss --Onm --Ifr --silent";
+		str6="./hackXSS --all "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --reverse-check --follow-redirects --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dom --Dcp --Ind --Doss --Onm --Ifr --silent";
 
 		const char *commands = str6.c_str();
 		system (commands);
@@ -660,6 +660,7 @@ int main()
 	}
 	else if ( 53 == n)
 	{
+		InstallSystem("curl");
 		string str7;
 		string s7;
 		system ("exit");
@@ -668,10 +669,17 @@ int main()
 		cout <<  "Please Enter Website:";
 		cin >> s7;
 		
-		str7="xdg-open view-source:"+s7;
-
+		str7="curl "+s7+" > source.html";
+		
 		const char *commands = str7.c_str();
 		system (commands);
+		
+		system ("clear");
+		string str8;
+		str8="curl "+s7;
+		const char *commands2 = str8.c_str();
+		system (commands2);
+		
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
