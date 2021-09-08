@@ -450,7 +450,7 @@ int main()
 		cout <<  "Please Enter Website for Attack:";
 		cin >> s6;
 		
-		str6="./hackXSS --all "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --reverse-check --follow-redirects --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dom --Dcp --Ind --Doss --Onm --Ifr --silent";
+		str6="./hackXSS --all "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --follow-redirects --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dcp --Ind --Doss --Onm --Ifr --silent";
 
 		const char *commands = str6.c_str();
 		system (commands);
@@ -476,12 +476,12 @@ int main()
 		#ifndef __linux__
 		system ("git clone git://github.com/Mebus/cupp.git");
 		#endif
-		system ("mv ~/hackX/cupp/CHANGELOG.md ~/hackX/");
-		system ("mv ~/hackX/cupp/cupp.cfg ~/hackX/");
-		system ("mv ~/hackX/cupp/cupp.py ~/hackX/");
-		system ("mv ~/hackX/cupp/LICENSE ~/hackX/");
-		system ("mv ~/hackX/cupp/README.md ~/hackX/");
-		system ("mv ~/hackX/cupp/test_cupp.py ~/hackX/");
+		system ("mv cupp/CHANGELOG.md ../hackX");
+		system ("mv cupp/cupp.cfg ../hackX");
+		system ("mv cupp/cupp.py ../hackX");
+		system ("mv cupp/LICENSE ../hackX");
+		system ("mv cupp/README.md ../hackX");
+		system ("mv cupp/test_cupp.py ../hackX");
 		system ("clear");
 		system ("./cupp.py -i");
 		system ("rm -rf cupp");
@@ -507,12 +507,12 @@ int main()
 		#ifndef __linux__
 		system ("git clone git://github.com/narbehaj/ssl-checker.git");
 		#endif
-		system ("mv ~/hackX/ssl-checker/LICENSE ~/hackX/");
-		system ("mv ~/hackX/ssl-checker/README.md ~/hackX/");
-		system ("mv ~/hackX/ssl-checker/requirements.txt ~/hackX/");
-		system ("mv ~/hackX/ssl-checker/socks.py ~/hackX/");
-		system ("mv ~/hackX/ssl-checker/socks.pyc ~/hackX/");
-		system ("mv ~/hackX/ssl-checker/ssl_checker.py ~/hackX/");
+		system ("mv ssl-checker/LICENSE ../hackX/");
+		system ("mv ssl-checker/README.md ../hackX/");
+		system ("mv ssl-checker/requirements.txt ../hackX/");
+		system ("mv ssl-checker/socks.py ../hackX/");
+		system ("mv ssl-checker/socks.pyc ../hackX/");
+		system ("mv ssl-checker/ssl_checker.py ../hackX/");
 		system ("pip install -r requirements.txt");
 		system ("clear");
 		cout <<  "Enter Website for Check SSL:";
@@ -713,15 +713,13 @@ int main()
 		#ifndef __linux__
 		system ("git clone git://github.com/anonymous14725/hackX.git");
 		#endif
-		system ("mv ~/hackX/hackX/hackx.run ~/hackX");
-		system ("mv ~/hackX/hackX/Data.zip ~/hackX");
-		system ("mv ~/hackX/hackX/hackx.cpp ~/hackX");
-		system ("unzip Data.zip");
+		system ("mv hackX/hackx.run ../hackX");
+		system ("mv hackX/Data.zip ../hackX");
+		system ("mv hackX/hackx.cpp ../hackX");
 		system ("chmod +x hackx.run");
 		system ("rm -rf hackX");
 		system ("rm -rf Data.zip");
-		system ("g++ hackx.cpp");
-		system ("clang++ hackx.cpp");
+		system ("c++ hackx.cpp");
 		system ("./a.out");
 	}
 	else
