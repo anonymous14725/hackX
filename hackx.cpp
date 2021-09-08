@@ -452,7 +452,7 @@ int main()
 		cout <<  "Please Enter Website for Attack:";
 		cin >> s6;
 		
-		str6="./hackXSS --all "+s6+" -c 99999 --Cw 1 --Cl -s --no-head --user-agent --reverse-check --follow-redirects --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dom --Dcp --Ind --Doss --Onm --Ifr --silent";
+		str6="./hackXSS --all "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --reverse-check --follow-redirects --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dom --Dcp --Ind --Doss --Onm --Ifr --silent";
 
 		const char *commands = str6.c_str();
 		system (commands);
