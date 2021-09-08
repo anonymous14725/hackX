@@ -300,11 +300,11 @@ int main()
 		system ("./instainsane.sh");
 		system ("gedit found.instainsane");
 		system ("nano found.instainsane");
-		remove ("nottested.lst");
-		remove ("install.sh");
-		remove ("instainsane.sh");
-		remove ("passwords.lst");
-		remove ("multitor");
+		system ("rm -rf nottested.lst");
+		system ("rm -rf install.sh");
+		system ("rm -rf instainsane.sh");
+		system ("rm -rf passwords.lst");
+		system ("rm -rf multitor");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
@@ -329,10 +329,10 @@ int main()
 		const char * commands = str2.c_str();
 			
 		system (commands); 
-		remove ("Breacher");
-		remove ("breacher.py");
-		remove ("paths.txt");
-		remove ("LICENSE");
+		system ("rm -rf Breacher");
+		system ("rm -rf breacher.py");
+		system ("rm -rf paths.txt");
+		system ("rm -rf LICENSE");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
