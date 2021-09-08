@@ -439,17 +439,15 @@ int main()
 		InstallSystem("python-xmlbuilder");
 		InstallSystem("python-beautifulsoup");
 		InstallSystem("python-geoip");
-		system ("pip install geoip");
-		system ("pip install pycurl");
-		system ("pip install xmlbuilder");
-		system ("pip install beautifulsoup");
-		system ("mv ~/hackX/xsser/xsser/setup.py ~/hackX");
-		system ("mv ~/hackX/xsser/xsser/xsser ~/hackX/hackXSS");
-		system ("mv ~/hackX/xsser/xsser/Makefile ~/hackX");
-		system ("mv ~/hackX/xsser/xsser/gtk ~/hackX");
-		system ("mv ~/hackX/xsser/xsser/doc ~/hackX");
-		system ("mv ~/hackX/xsser/xsser/core ~/hackX");
+		system ("pip install pycurl bs4 pygeoip gobject cairocffi selenium");
+		system ("mv xsser/setup.py ../hackX");
+		system ("mv xsser/xsser ../hackX/hackXSS");
+		system ("mv xsser/Makefile ../hackX");
+		system ("mv xsser/gtk ../hackX");
+		system ("mv xsser/doc ../hackX");
+		system ("mv xsser/core ../hackX");
 		system ("python setup.py install");
+		
 		system ("clear");
 		cout <<  "Please Enter Website for Attack:";
 		cin >> s6;
@@ -463,9 +461,9 @@ int main()
 		system ("rm -rf doc");
 		system ("rm -rf gtk");
 		system ("rm -rf core");
-		system ("rm -rf hackXSS");
 		system ("rm -rf setup.py");
 		system ("rm -rf Makefile");
+		system ("rm -rf hackXSS");
 		system ("rm -rf xsser");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
