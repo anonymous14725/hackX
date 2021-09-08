@@ -119,10 +119,10 @@ int main()
 		const char * commands = str.c_str();
 		system (commands);
 		
-		remove ("headers.txt");
-		remove ("hammer.py");
-		remove ("README.md");
-		remove ("hammer");
+		system ("rm -rf headers.txt");
+		system ("rm -rf hammer.py");
+		system ("rm -rf README.md");
+		system ("rm -rf hammer");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout << __TIME__ << endl;
 		cout << "Bye";
@@ -163,7 +163,7 @@ int main()
 				system ("mkdir Output");
 
 				system ("mv ~/hackX/hi.txt ~/hackX/Output/vpn.bat");
-				remove ("virusWindows.cpp");
+				system ("rm -rf virusWindows.cpp");
 			
 				system ("g++ hackx.cpp");
 				system ("clang++ hackx.cpp");
@@ -183,7 +183,7 @@ int main()
 				system ("./a.out");
 				system ("mkdir Output"); 
 				system ("mv ~/hackX/hi.txt ~/hackX/Output/Games.bat");
-				remove ("virusHard.cpp");
+				system ("rm -rf virusHard.cpp");
 				system ("g++ hackx.cpp");
 				system ("mv ~/hackX/a.out ~/hackX/hackx.run");
 				cout << "  \033[1;32mCreated virus for Windows\033[1;m";
@@ -388,20 +388,20 @@ int main()
 		const char * commands = str4.c_str();
 			
 		system (commands);
-		remove ("sqlmap-dev");
-		remove ("COMMITMENT");
-		remove ("doc");
-		remove ("lib");
-		remove ("plugins");
-		remove ("sqlmapapi.py");
-		remove ("sqlmap.py");
-		remove ("thirdparty");
-		remove ("data");
-		remove ("extra");
-		remove ("LICENSE");
-		remove ("README.md");
-		remove ("sqlmap.conf");
-		remove ("tamper");
+		system ("rm -rf sqlmap-dev");
+		system ("rm -rf COMMITMENT");
+		system ("rm -rf doc");
+		system ("rm -rf lib");
+		system ("rm -rf plugins");
+		system ("rm -rf sqlmapapi.py");
+		system ("rm -rf sqlmap.py");
+		system ("rm -rf thirdparty");
+		system ("rm -rf data");
+		system ("rm -rf extra");
+		system ("rm -rf LICENSE");
+		system ("rm -rf README.md");
+		system ("rm -rf sqlmap.conf");
+		system ("rm -rf tamper");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
@@ -458,15 +458,15 @@ int main()
 
 		const char *commands = str6.c_str();
 		system (commands);
-		remove ("xsser.egg-info");
-		remove ("build");
-		remove ("doc");
-		remove ("gtk");
-		remove ("core");
-		remove ("hackXSS");
-		remove ("setup.py");
-		remove ("Makefile");
-		remove ("xsser");
+		system ("rm -rf xsser.egg-info");
+		system ("rm -rf build");
+		system ("rm -rf doc");
+		system ("rm -rf gtk");
+		system ("rm -rf core");
+		system ("rm -rf hackXSS");
+		system ("rm -rf setup.py");
+		system ("rm -rf Makefile");
+		system ("rm -rf xsser");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
@@ -488,13 +488,13 @@ int main()
 		system ("mv ~/hackX/cupp/test_cupp.py ~/hackX/");
 		system ("clear");
 		system ("./cupp.py -i");
-		remove ("cupp");
-		remove ("CHANGELOG.md");
-		remove ("cupp.cfg");
-		remove ("cupp.py");
-		remove ("LICENSE");
-		remove ("README.md");
-		remove ("test_cupp.py");
+		system ("rm -rf cupp");
+		system ("rm -rf CHANGELOG.md");
+		system ("rm -rf cupp.cfg");
+		system ("rm -rf cupp.py");
+		system ("rm -rf LICENSE");
+		system ("rm -rf README.md");
+		system ("rm -rf test_cupp.py");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
@@ -526,20 +526,20 @@ int main()
 
 		const char *commands = str8.c_str();
 		system (commands);
-		remove ("LICENSE");
-		remove ("README.md");
-		remove ("requirements.txt");
-		remove ("socks.py");
-		remove ("ssl_checker.py");
-		remove ("ssl-checker");
+		system ("rm -rf LICENSE");
+		system ("rm -rf README.md");
+		system ("rm -rf requirements.txt");
+		system ("rm -rf socks.py");
+		system ("rm -rf ssl_checker.py");
+		system ("rm -rf ssl-checker");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
 	else if ( 50 == n)
 	{
-		remove ("/var/cache/apt/archives/lock");
-		remove ("/var/lib/pacman/db.lck");
+		system ("rm -rf /var/cache/apt/archives/lock");
+		system ("rm -rf /var/lib/pacman/db.lck");
 		system ("clear");
 		printf ("Debug Successful\n \a");
 		cout <<  __TIME__ << endl;
@@ -701,7 +701,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
-		remove ("hackX");
+		system ("rm -rf hackX");
 	}
 	else if ( 100 == n)
 	{
@@ -715,7 +715,7 @@ int main()
 		system ("unzip Data.zip");
 		system ("chmod +x hackx.run");
 		system ("rm -rf hackX");
-		remove ("Data.zip");
+		system ("rm -rf Data.zip");
 		system ("g++ hackx.cpp");
 		system ("clang++ hackx.cpp");
 		system ("./a.out");
