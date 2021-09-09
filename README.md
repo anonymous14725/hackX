@@ -28,6 +28,7 @@ For download must write commands<br>
 <b>6.OpenBSD</b><br>
 <code>pkg_add git</code><br>
 <b>7.MacOS</b><br>
+<code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code><br>
 <code>brew update</code><br>
 # Install Application
 For Install must write commands<br>
