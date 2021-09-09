@@ -27,6 +27,8 @@ For download must write commands<br>
 <code>pkg install git</code><br>
 <b>6.OpenBSD</b><br>
 <code>pkg_add git</code><br>
+<b>7.MacOS</b><br>
+<code>brew update</code><br>
 # Install Application
 For Install must write commands<br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
