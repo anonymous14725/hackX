@@ -423,21 +423,27 @@ int main()
 		cout <<  "Bye";		 
 	}
 	else if ( 9 == n){
-		string str6;
+		string str6,strs6;
 		string s6;
 		InstallSystem("git");
 		InstallSystem("python");
 		InstallSystem("python2");
+		InstallSystem("python3");
 		InstallSystem("python-pip");
 		system ("git clone https://github.com/epsylon/xsser");
 		#ifndef __linux__
 		system ("git clone git://github.com/epsylon/xsser.git");
 		#endif
 		InstallSystem("python-pycurl");
+		InstallSystem("python3-pycurl");
 		InstallSystem("python-xmlbuilder");
+		InstallSystem("python3-xmlbuilder");
 		InstallSystem("python-beautifulsoup");
+		InstallSystem("python3-beautifulsoup");
 		InstallSystem("python-geoip");
+		InstallSystem("python3-geoip");
 		system ("pip install pycurl bs4 pygeoip gobject cairocffi selenium");
+		system ("pip3 install pycurl bs4 pygeoip gobject cairocffi selenium");
 		system ("mv xsser/setup.py ../hackX");
 		system ("mv xsser/xsser ../hackX/hackXSS");
 		system ("mv xsser/Makefile ../hackX");
@@ -445,15 +451,23 @@ int main()
 		system ("mv xsser/doc ../hackX");
 		system ("mv xsser/core ../hackX");
 		system ("python setup.py install");
+		system ("python3 setup.py install");
 		
 		system ("clear");
 		cout <<  "Please Enter Website for Attack:";
 		cin >> s6;
 		
-		str6="./hackXSS --all "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --follow-redirects --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dcp --Ind --Doss --Onm --Ifr --silent";
+		strs6="python3 hackXSS --all --url "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dcp --Ind --Doss --Onm --Ifr --silent";
+
+		str6="python hackXSS --all --url "+s6+" -c 99999 --Cw 1 --Cl -s --user-agent --follow-limit 50 --threads 10 --timeout 60 --retries 2 --delay 5 --auto --Coo --Xsa --Xsr --Dcp --Ind --Doss --Onm --Ifr --silent";
+		
+
+		const char * commands2 = strs6.c_str();
+		system (commands2);
 
 		const char *commands = str6.c_str();
 		system (commands);
+		
 		system ("rm -rf xsser.egg-info");
 		system ("rm -rf build");
 		system ("rm -rf doc");
