@@ -35,7 +35,7 @@ For Install must write commands<br>
 <code>./hackx.run</code><br>
 __and Install in freebsd__<br>
 <code>cd hackX</code><br>
-<code>clang++ hackx.cpp</code><br>
+<code>c++ hackx.cpp</code><br>
 <code>./a.out</code><br>
 # Install in Termux
 For install in Termux must write commands under<br>
@@ -44,7 +44,7 @@ For install in Termux must write commands under<br>
 <code>pkg install git</code><br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
 <code>cd hackX</code><br>
-<code>g++ hackx.cpp</code><br>
+<code>c++ hackx.cpp</code><br>
 <code>./a.out</code><br>
 __Warning:You must app in put original page or write Command (mv [NAME FILE] to ~/) <br>
 Attantion:You must access to root , with command (su) and write your password__ <br>
