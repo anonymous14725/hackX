@@ -312,6 +312,8 @@ int main()
 		string s2;
 		string str2;
 		InstallSystem("git");
+		InstallSystem("python-pip");
+		InstallSystem("python2-pip");
 		system ("git clone https://github.com/s0md3v/Breacher");
 		#ifndef __linux__
 		system ("git clone git://github.com/s0md3v/Breacher.git");
@@ -319,6 +321,8 @@ int main()
 		system ("mv Breacher/breacher.py ../hackX");
 		system ("mv Breacher/paths.txt ../hackX");
 		system ("mv Breacher/LICENSE ../hackX");
+		system ("pip2 install requests threading argparse");
+		system ("pip install requests threading argparse");
 		system ("clear");
 		cout <<  "Website Address:";
 		cin >> s2;	
