@@ -263,7 +263,7 @@ int main()
 			cout <<  "Bye";
 		}
 	}
-	else if ( 3 == n)
+	else if (3 == n)
 	{
 		InstallSystem("git");
 		InstallSystem("python");
@@ -281,33 +281,30 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 		}
-	else if ( 4 == n)
+	else if (4 == n)
 	{
 		InstallSystem("git");
-		system ("git clone https://github.com/thelinuxchoice/instainsane");
+		system ("git clone https://github.com/maxrooted/instashell");
 		#ifndef __linux__
-		system ("git clone git://github.com/thelinuxchoice/instainsane.git");
+		system ("git clone git://github.com/maxrooted/instashell.git");
 		#endif
-		system ("mv ~/hackX/instainsane/instainsane.sh ~/hackX/");
-		system ("mv ~/hackX/instainsane/install.sh ~/hackX/");
-		system ("mv ~/hackX/instainsane/passwords.lst ~/hackX");
-		remove ("instainsane");
+		system ("mv instashell/instashell.sh ../hackX/");
+		system ("mv instashell/install.sh ../hackX/");
+		system ("mv instashell/passwords.lst ../hackX");
 		system ("chmod +x install.sh");
 		system ("./install.sh");
-		system ("chmod +x instainsane.sh");
-		system ("./instainsane.sh");
-		system ("gedit found.instainsane");
-		system ("nano found.instainsane");
+		system ("chmod +x instashell.sh");
+		system ("./instashell.sh");
+		system ("rm -rf instashell");
 		system ("rm -rf nottested.lst");
 		system ("rm -rf install.sh");
-		system ("rm -rf instainsane.sh");
+		system ("rm -rf instashell.sh");
 		system ("rm -rf passwords.lst");
-		system ("rm -rf multitor");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 5 == n)
+	else if (5 == n)
 	{
 		string s2;
 		string str2;
@@ -339,7 +336,7 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 		}
-	else if ( 6 == n)
+	else if (6 == n)
 	{
 		string s3;
 		string str3;
@@ -358,7 +355,7 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 		}
-	else if ( 7 == n)
+	else if (7 == n)
 	{
 		string s4;
 		string str4;
@@ -408,7 +405,8 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}  
-	else if ( 8 == n){
+	else if (8 == n)
+	{
 		string str5;
 		string s5;
 		InstallSystem("httrack");
@@ -426,7 +424,8 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";		 
 	}
-	else if ( 9 == n){
+	else if (9 == n)
+	{
 		string str6,strs6;
 		string s6;
 		InstallSystem("git");
@@ -485,7 +484,7 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 10 == n){
+	else if (10 == n){
 		InstallSystem("python3");
 		InstallSystem("python");
 		InstallSystem("python2");
@@ -513,7 +512,7 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 11 == n)
+	else if (11 == n)
 	{
 		string str8;
 		string s8;
@@ -553,7 +552,7 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 50 == n)
+	else if (50 == n)
 	{
 		system ("rm -rf /var/cache/apt/archives/lock");
 		system ("rm -rf /var/lib/pacman/db.lck");
@@ -562,7 +561,7 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if ( 51 == n)
+	else if (51 == n)
 	{
 		printf ("Other 5 Seconds To Web Browser\n");
 		sleep(5);	
