@@ -74,9 +74,6 @@ int main()
 	cout << " ...please wait..." << endl;
 	sleep(5);
 	
-	system ("unzip Data.zip");
-	remove("Data.zip");
-	
 	system ("clear");
 	cout << "HACK X" << endl;
 	
