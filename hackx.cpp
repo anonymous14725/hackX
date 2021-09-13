@@ -281,6 +281,7 @@ int main()
 	else if (4 == n)
 	{
 		InstallSystem("git");
+		InstallSystem("tor");
 		system ("git clone https://github.com/maxrooted/instashell");
 		#ifndef __linux__
 		system ("git clone git://github.com/maxrooted/instashell.git");
@@ -291,6 +292,8 @@ int main()
 		system ("chmod +x install.sh");
 		system ("./install.sh");
 		system ("chmod +x instashell.sh");
+		system ("systemctl start tor");
+		system ("service tor start");
 		system ("./instashell.sh");
 		system ("rm -rf instashell");
 		system ("rm -rf nottested.lst");
