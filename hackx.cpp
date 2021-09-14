@@ -165,8 +165,8 @@ int main()
 				system ("c++ hackx.cpp");
 				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Windows\033[1;m";
-				printf (" \033[1;36mHelp: File Name is vpn.bat and Must you send virus a device \033[1;m");
-				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
+				printf ("\n \033[1;36mHelp: File Name is vpn.bat and Must you send virus a device \033[1;m");
+				printf ("\n \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
 				printf ("\n\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 				cout << __TIME__ << endl;
 				cout << "Bye";
@@ -183,8 +183,8 @@ int main()
 				system ("c++ hackx.cpp");
 				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Windows\033[1;m";
-				printf (" \033[1;36mHelp: File Name Games.bat and Must you send virus a device\033[1;m");
-				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
+				printf ("\n \033[1;36mHelp: File Name Games.bat and Must you send virus a device\033[1;m");
+				printf ("\n \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
 				printf ("\n \033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 				cout << __TIME__ << "\n";
 				cout << "Bye";
@@ -197,8 +197,8 @@ int main()
 				system ("c++ hackx.cpp");
 				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for CD Rom\033[1;m";
-				printf (" \033[1;36mHelp: File Name debugCD.vbs and Must you send virus a device\033[1;m");
-				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
+				printf ("\n \033[1;36mHelp: File Name debugCD.vbs and Must you send virus a device\033[1;m");
+				printf ("\n \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
 				printf ("\n\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 				cout << __TIME__ << endl;
 				cout << "Bye";
@@ -211,8 +211,8 @@ int main()
 				system ("c++ hackx.cpp");
 				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Messager\033[1;m";
-				printf (" \033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m");
-				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
+				printf ("\n \033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m");
+				printf ("\n \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
 				printf ("\n\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 				cout << __TIME__ << endl;
 				cout << "Bye";
@@ -225,8 +225,8 @@ int main()
 				system ("c++ hackx.cpp");
 				system ("mv a.out hackx.run");
 				cout << "  \033[1;32mCreated virus for Voice\033[1;m";
-				printf (" \033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m");
-				printf (" \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
+				printf ("\n \033[1;36mHelp: File Name Messager.vbs and Must you send virus a device\033[1;m");
+				printf ("\n \033[1;31mAttention: Must be device Windows and must disable firewall\033[1;m");
 				printf ("\n\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 				cout << __TIME__ << endl;
 				cout << "Bye";
@@ -247,8 +247,8 @@ int main()
 			system ("c++ hackx.cpp");
 			system ("mv a.out hackx.run");
 			cout << "  \033[1;32mcreated virus for Linux\033[1;m";
-			printf (" \033[1;36mhelp: File Name is vpn.run and Must you send virus a device\033[1;m");
-			printf (" \033[1;31mAttention: must be device Linux\033[1;m");
+			printf ("\n \033[1;36mhelp: File Name is vpn.run and Must you send virus a device\033[1;m");
+			printf ("\n \033[1;31mAttention: must be device Linux\033[1;m");
 			printf ("\n\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 			cout <<  __TIME__ << endl;
 			cout <<  "Bye";
