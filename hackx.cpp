@@ -77,10 +77,10 @@ int main()
 	system ("clear");
 	cout << "\x1B[1m\x1B[31mHACK\x1B[31m \x1B[35mX" << endl;
 	
-	cout << "\x1B[0m| \033[1;32m1)Attack DDOS\033[1;m" << "\n| \033[1;32m2)Create the Virus\033[1;m" << "\n| \033[1;32m3)Get Proxy\033[1;m" << "\n| \033[1;32m4)Cracker Instagram\033[1;m" << "\n| \033[1;32m5)Find the Username of the Admin Website\033[1;m" << "\n| \033[1;32m6)Find IP Website\033[1;m" << "\n| \033[1;32m7)Attack SQL Injection\033[1;m" << "\n| \033[1;32m8)Website Template\033[1;m" << "\n| \033[1;32m9)Attack XSS\033[1;m" << "\n| \033[1;32m10)Create Paassword List\033[1;m" << "\n| \033[1;32m11)Checker SSL Websites\033[1;m";
+	cout << "\x1B[0m| \033[1;32m1)Attack DDOS\033[1;m" << "\n| \033[1;32m2)Create the Virus\033[1;m" << "\n| \033[1;32m3)Get Proxy\033[1;m" << "\n| \033[1;32m4)Cracker Instagram\033[1;m" << "\n| \033[1;32m5)Find the Username of the Admin Website\033[1;m" << "\n| \033[1;32m6)Find IP Website\033[1;m" << "\n| \033[1;32m7)Attack SQL Injection\033[1;m" << "\n| \033[1;32m8)Website Template\033[1;m" << "\n| \033[1;32m9)Attack XSS\033[1;m" << "\n| \033[1;32m10)Create Paassword List\033[1;m" << "\n| \033[1;32m11)Checker SSL Websites\033[1;m" << "\n| \033[1;32m12)Social Engineering\033[1;m";
 	cout << "\n\n| \033[1;34m50)Debug\033[1;m" << "\n| \033[1;34m51)Change Password Router\033[1;m" << "\n| \033[1;34m52)Go to DarkWeb\033[1;m" << "\n| \033[1;34m53)View Source\033[1;m"<< "\n| \033[1;34m54)Test Internet Speed\033[1;m";
 	
-	cout << string(3 , '\n'); 
+	cout << string(2 , '\n'); 
 	cout << "\033[1;36m99)About______________________________100)Update\033[1;m" << endl;
 	cout << "\n \nPlease Enter Number:";
 	cin >> n;
@@ -354,7 +354,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
-		}
+	}
 	else if (7 == n)
 	{
 		string s4;
@@ -484,7 +484,8 @@ int main()
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
-	else if (10 == n){
+	else if (10 == n)
+	{
 		InstallSystem("python3");
 		InstallSystem("python");
 		InstallSystem("python2");
@@ -551,6 +552,48 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
+	}
+	else if (12 == n)
+	{
+		InstallSystem("python");
+		InstallSystem("python3");
+		InstallSystem("git");
+		system ("git clone https://github.com/trustedsec/social-engineer-toolkit");
+		#ifndef __linux__
+		system ("git clone git://github.com/trustedsec/social-engineer-toolkit.git");
+		#endif
+		system ("mv social-engineer-toolkit/.gitignore ../hackX");
+		system ("mv social-engineer-toolkit/Dockerfile ../hackX");
+		system ("mv social-engineer-toolkit/README.md ../hackX");
+		system ("mv social-engineer-toolkit/requirements.txt ../hackX");
+		system ("mv social-engineer-toolkit/seautomate ../hackX");
+		system ("mv social-engineer-toolkit/seproxy ../hackX");
+		system ("mv social-engineer-toolkit/setoolkit ../hackX");
+		system ("mv social-engineer-toolkit/setup.py ../hackX");
+		system ("mv social-engineer-toolkit/seupdate ../hackX");
+		system ("mv social-engineer-toolkit/.github ../hackX");
+		system ("mv social-engineer-toolkit/modules ../hackX");
+		system ("mv social-engineer-toolkit/readme ../hackX");
+		system ("mv social-engineer-toolkit/src ../hackX");
+		system ("pip3 install -r requirements.txt");
+		system ("pip install -r requirements.txt");
+		system ("python3 setup.py");
+		system ("python setup.py");
+		system ("./setoolkit");
+		system ("rm -rf .github");
+		system ("rm -rf modules");
+		system ("rm -rf readme");
+		system ("rm -rf src");
+		system ("rm -rf .gitignore");
+		system ("rm -rf Dockerfile");
+		system ("rm -rf README.md");
+		system ("rm -rf requirements.txt");
+		system ("rm -rf seautomate");
+		system ("rm -rf seproxy");
+		system ("rm -rf setoolkit");
+		system ("rm -rf setup.py");
+		system ("rm -rf seupdate");
+		system ("rm -rf social-engineer-toolkit");
 	}
 	else if (50 == n)
 	{
