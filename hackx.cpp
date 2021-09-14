@@ -734,7 +734,6 @@ int main()
 		system ("git clone git://github.com/anonymous14725/hackX.git");
 		#endif
 		system ("mv hackX/hackx.run ../hackX");
-		system ("mv hackX/Data.zip ../hackX");
 		system ("mv hackX/hackx.cpp ../hackX");
 		system ("chmod +x hackx.run");
 		system ("rm -rf hackX");
