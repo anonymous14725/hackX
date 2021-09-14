@@ -21,6 +21,10 @@ void InstallSystem(string Application)
 	Commandst +="yum install "+Application;
 	system (Commandst.c_str());
 	
+	string Commander;
+	Commander += "zypper install "+Application;
+	system (Commander.c_str());
+	
 	string Commandstr;
 	Commandstr += "pkg install "+Application;
 	system (Commandstr.c_str());
