@@ -344,7 +344,7 @@ int main()
 		UpdateSystem();
 		InstallSystem("nmap");
 		system ("clear");
-		cout <<  "please Enter Website:";
+		cout <<  "please Enter Website (Without http://):";
 		cin >> s3;	
 		str3="nmap -v -A "+s3;
 		
