@@ -781,6 +781,8 @@ int main()
 		#endif
 		system ("mv hackX/hackx.run ../hackX");
 		system ("mv hackX/hackx.cpp ../hackX");
+		system ("rm -rf Data");
+		system ("mv hackX/Data ../hackX");
 		system ("chmod +x hackx.run");
 		system ("rm -rf hackX");
 		system ("c++ hackx.cpp");
