@@ -594,6 +594,9 @@ int main()
 		system ("rm -rf setup.py");
 		system ("rm -rf seupdate");
 		system ("rm -rf social-engineer-toolkit");
+		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
+		cout <<  __TIME__ << endl;
+		cout <<  "Bye";
 	}
 	else if (50 == n)
 	{
