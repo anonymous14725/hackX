@@ -96,8 +96,8 @@ int main()
 		string spam;
 		string num;
 		InstallSystem("python3");
-        InstallSystem("python3-pip");
-        InstallSystem("python-pip");
+                InstallSystem("python3-pip");
+                InstallSystem("python-pip");
 		InstallSystem("git");
  		system ("git clone https://github.com/cyweb/hammer tmp/hammer");
  		#ifndef __linux__
