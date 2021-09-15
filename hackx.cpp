@@ -103,7 +103,7 @@ int main()
 		system ("cp tmp/hammer/headers.txt ../hackX");
         
         system ("pip3 install queuelib");
-		system ("pip install queuelib");
+	system ("pip install queuelib");
 		
         system("clear");
 		
@@ -125,7 +125,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout << __TIME__ << endl;
 		cout << "Bye";
-		}
+	}
 	else if (2 == n)
 	{
 		int sp;
@@ -276,7 +276,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
-		}
+	}
 	else if (4 == n)
 	{
 		InstallSystem("git");
@@ -334,7 +334,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
-		}
+	}
 	else if (6 == n)
 	{
 		string s3;
