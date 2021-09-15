@@ -64,6 +64,7 @@ void UpdateSystem()
 	system("yum update");
 	system("pkgin update");
 	system("brew update");
+	system("zypper update");
 }
 
 int main()
@@ -95,6 +96,8 @@ int main()
 		string spam;
 		string num;
 		InstallSystem("python3");
+        InstallSystem("python3-pip");
+        InstallSystem("python-pip");
 		InstallSystem("git");
  		system ("git clone https://github.com/cyweb/hammer tmp/hammer");
  		#ifndef __linux__
@@ -103,7 +106,7 @@ int main()
 		system ("cp tmp/hammer/headers.txt ../hackX");
         
         system ("pip3 install queuelib");
-	system ("pip install queuelib");
+		system ("pip install queuelib");
 		
         system("clear");
 		
@@ -113,10 +116,8 @@ int main()
 		cin >> spam;
 		cout << "Please Enter thread Number:";
 		cin >> num;
+        str="python3 tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
 		str="python tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
-		str="python3 tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
-		
-
 
 		const char * commands = str.c_str();
 		system (commands);
@@ -125,7 +126,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout << __TIME__ << endl;
 		cout << "Bye";
-	}
+		}
 	else if (2 == n)
 	{
 		int sp;
@@ -276,7 +277,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
-	}
+		}
 	else if (4 == n)
 	{
 		InstallSystem("git");
@@ -334,7 +335,7 @@ int main()
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
-	}
+		}
 	else if (6 == n)
 	{
 		string s3;
