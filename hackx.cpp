@@ -268,15 +268,12 @@ int main()
 	{
 		InstallSystem("git");
 		InstallSystem("python");
-		system ("git clone https://github.com/stamparm/fetch-some-proxies");
+		system ("git clone https://github.com/stamparm/fetch-some-proxies tmp/fetch-some-proxies");
 		#ifndef __linux__
-		system ("git clone git://github.com/stamparm/fetch-some-proxies.git");
+		system ("git clone git://github.com/stamparm/fetch-some-proxies.git tmp/fetch-some-proxies");
 		#endif
-		system ("mv fetch-some-proxies/fetch.py ../hackX/");
 		system ("clear");
-		system ("python2 fetch.py --threads=300");
-		system ("rm -rf fetch-some-proxies");
-		system ("rm -rf fetch.py");
+		system ("python2 tmp/fetch-some-proxies/fetch.py --threads=300");
 		sleep(1);
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
