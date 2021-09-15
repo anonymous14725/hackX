@@ -116,8 +116,9 @@ int main()
 		cin >> spam;
 		cout << "Please Enter thread Number:";
 		cin >> num;
+        str="python tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
         str="python3 tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
-		str="python tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
+		
 
 		const char * commands = str.c_str();
 		system (commands);
