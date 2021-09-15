@@ -95,9 +95,9 @@ int main()
 		string str;
 		string spam;
 		string num;
-		InstallSystem("python2");
+		InstallSystem("python3");
         	InstallSystem("python");
-        	InstallSystem("python2-pip");
+        	InstallSystem("python3-pip");
         	InstallSystem("python-pip");
 		InstallSystem("git");
  		system ("git clone https://github.com/cyweb/hammer tmp/hammer");
@@ -106,7 +106,7 @@ int main()
  		#endif
 		system ("cp tmp/hammer/headers.txt ../hackX");
         
-        	system ("pip3 install queuelib");
+        system ("pip3 install queuelib");
 		system ("pip install queuelib");
 		
         	system("clear");
@@ -117,8 +117,10 @@ int main()
 		cin >> spam;
 		cout << "Please Enter thread Number:";
 		cin >> num;
+        	
         	str="python tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
-		str="python2 tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
+        	str="python3 tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
+		
 		
 		const char * commands = str.c_str();
 		system (commands);
