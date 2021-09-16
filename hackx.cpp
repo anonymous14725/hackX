@@ -309,31 +309,27 @@ int main()
 		InstallSystem("git");
 		InstallSystem("python-pip");
 		InstallSystem("python2-pip");
-		system ("git clone https://github.com/s0md3v/Breacher");
+		system ("git clone https://github.com/s0md3v/Breacher .tmp/five");
 		#ifndef __linux__
-		system ("git clone git://github.com/s0md3v/Breacher.git");
+		system ("git clone git://github.com/s0md3v/Breacher.git .tmp/five");
 		#endif
-		system ("mv Breacher/breacher.py ../hackX");
-		system ("mv Breacher/paths.txt ../hackX");
-		system ("mv Breacher/LICENSE ../hackX");
 		system ("pip2 install requests threading argparse");
 		system ("pip install requests threading argparse");
+		system ("cp .tmp/five/paths.txt ../hackX");
+		
 		system ("clear");
 		cout <<  "Website Address:";
 		cin >> s2;	
-		str2="python2 breacher.py -u "+s2;
+		str2="python2 .tmp/five/breacher.py -u "+s2;
 		
 		const char * commands = str2.c_str();
 			
 		system (commands); 
-		system ("rm -rf Breacher");
-		system ("rm -rf breacher.py");
 		system ("rm -rf paths.txt");
-		system ("rm -rf LICENSE");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
-		}
+	}
 	else if (6 == n)
 	{
 		string s3;
