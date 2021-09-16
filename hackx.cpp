@@ -307,6 +307,8 @@ int main()
 		string s2;
 		string str2;
 		InstallSystem("git");
+		InstallSystem("python");
+		InstallSystem("python2");
 		InstallSystem("python-pip");
 		InstallSystem("python2-pip");
 		system ("git clone https://github.com/s0md3v/Breacher .tmp/five");
@@ -356,45 +358,18 @@ int main()
 		InstallSystem("git");
 		InstallSystem("python");
 		InstallSystem("python2");
-		system ("git clone --depth 1 https://github.com/sqlmapproject/sqlmap sqlmap-dev");
+		system ("git clone --depth 1 https://github.com/sqlmapproject/sqlmap .tmp/seven");
 		#ifndef __linux__
-		system ("git clone --depth 1 git://github.com/sqlmapproject/sqlmap.git sqlmap-dev");
+		system ("git clone --depth 1 git://github.com/sqlmapproject/sqlmap.git .tmp/seven");
 		#endif
-		system ("mv sqlmap-dev/COMMITMENT ../hackX");
-		system ("mv sqlmap-dev/doc ../hackX");
-		system ("mv sqlmap-dev/lib ../hackX");
-		system ("mv sqlmap-dev/plugins ../hackX/");
-		system ("mv sqlmap-dev/sqlmapapi.py ../hackX/");
-		system ("mv sqlmap-dev/sqlmap.py ../hackX/");
-		system ("mv sqlmap-dev/thirdparty ../hackX/");
-		system ("mv sqlmap-dev/data ../hackX/");
-		system ("mv sqlmap-dev/extra ../hackX/");
-		system ("mv sqlmap-dev/LICENSE ../hackX/");
-		system ("mv sqlmap-dev/README.md ../hackX/");
-		system ("mv sqlmap-dev/sqlmap.conf ../hackX/");
-		system ("mv sqlmap-dev/tamper ../hackX/");
 		system ("clear");
 		cout <<  "Please Enter the Website That Has the Bug(Without http://):";
 		cin >> s4;	
-		str4="python2 sqlmap.py -u http://"+s4+" --dump";
+		str4="python2 .tmp/seven/sqlmap.py -u http://"+s4+" --dump";
 		
 		const char * commands = str4.c_str();
 			
 		system (commands);
-		system ("rm -rf sqlmap-dev");
-		system ("rm -rf COMMITMENT");
-		system ("rm -rf doc");
-		system ("rm -rf lib");
-		system ("rm -rf plugins");
-		system ("rm -rf sqlmapapi.py");
-		system ("rm -rf sqlmap.py");
-		system ("rm -rf thirdparty");
-		system ("rm -rf data");
-		system ("rm -rf extra");
-		system ("rm -rf LICENSE");
-		system ("rm -rf README.md");
-		system ("rm -rf sqlmap.conf");
-		system ("rm -rf tamper");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
