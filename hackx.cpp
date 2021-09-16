@@ -506,42 +506,18 @@ int main()
 		InstallSystem("python");
 		InstallSystem("python3");
 		InstallSystem("git");
-		system ("git clone https://github.com/trustedsec/social-engineer-toolkit");
+		system ("git clone https://github.com/trustedsec/social-engineer-toolkit .tmp/twelve");
 		#ifndef __linux__
-		system ("git clone git://github.com/trustedsec/social-engineer-toolkit.git");
+		system ("git clone git://github.com/trustedsec/social-engineer-toolkit.git .tmp/twelve");
 		#endif
-		system ("mv social-engineer-toolkit/.gitignore ../hackX");
-		system ("mv social-engineer-toolkit/Dockerfile ../hackX");
-		system ("mv social-engineer-toolkit/README.md ../hackX");
-		system ("mv social-engineer-toolkit/requirements.txt ../hackX");
-		system ("mv social-engineer-toolkit/seautomate ../hackX");
-		system ("mv social-engineer-toolkit/seproxy ../hackX");
-		system ("mv social-engineer-toolkit/setoolkit ../hackX");
-		system ("mv social-engineer-toolkit/setup.py ../hackX");
-		system ("mv social-engineer-toolkit/seupdate ../hackX");
-		system ("mv social-engineer-toolkit/.github ../hackX");
-		system ("mv social-engineer-toolkit/modules ../hackX");
-		system ("mv social-engineer-toolkit/readme ../hackX");
-		system ("mv social-engineer-toolkit/src ../hackX");
-		system ("pip3 install -r requirements.txt");
-		system ("pip install -r requirements.txt");
-		system ("python3 setup.py");
-		system ("python setup.py");
-		system ("./setoolkit");
-		system ("rm -rf .github");
-		system ("rm -rf modules");
-		system ("rm -rf readme");
-		system ("rm -rf src");
-		system ("rm -rf .gitignore");
-		system ("rm -rf Dockerfile");
-		system ("rm -rf README.md");
-		system ("rm -rf requirements.txt");
-		system ("rm -rf seautomate");
-		system ("rm -rf seproxy");
-		system ("rm -rf setoolkit");
-		system ("rm -rf setup.py");
-		system ("rm -rf seupdate");
-		system ("rm -rf social-engineer-toolkit");
+		
+		system ("pip3 install -r .tmp/twelve/requirements.txt");
+		system ("pip install -r .tmp/twelve/requirements.txt");
+		
+		system ("python3 .tmp/twelve/setup.py");
+		system ("python .tmp/twelve/setup.py");
+		
+		system ("./.tmp/twelve/setoolkit");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
