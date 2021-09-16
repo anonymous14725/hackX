@@ -459,25 +459,14 @@ int main()
 		InstallSystem("python");
 		InstallSystem("python2");
 		InstallSystem("git");
-		system ("git clone https://github.com/Mebus/cupp");
+		system ("git clone https://github.com/Mebus/cupp .tmp/ten");
 		#ifndef __linux__
-		system ("git clone git://github.com/Mebus/cupp.git");
+		system ("git clone git://github.com/Mebus/cupp.git .tmp/ten");
 		#endif
-		system ("mv cupp/CHANGELOG.md ../hackX");
-		system ("mv cupp/cupp.cfg ../hackX");
-		system ("mv cupp/cupp.py ../hackX");
-		system ("mv cupp/LICENSE ../hackX");
-		system ("mv cupp/README.md ../hackX");
-		system ("mv cupp/test_cupp.py ../hackX");
+		
 		system ("clear");
-		system ("./cupp.py -i");
-		system ("rm -rf cupp");
-		system ("rm -rf CHANGELOG.md");
-		system ("rm -rf cupp.cfg");
-		system ("rm -rf cupp.py");
-		system ("rm -rf LICENSE");
-		system ("rm -rf README.md");
-		system ("rm -rf test_cupp.py");
+		system ("./.tmp/ten/cupp.py -i");
+		
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
