@@ -709,6 +709,7 @@ int main()
 		system ("mv hackX/Data ../hackX");
 		system ("chmod +x hackx.run");
 		system ("rm -rf hackX");
+		system ("rm -rf .tmp");
 		system ("c++ hackx.cpp");
 		system ("./a.out");
 	}
