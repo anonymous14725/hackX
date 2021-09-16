@@ -285,23 +285,18 @@ int main()
 	{
 		InstallSystem("git");
 		InstallSystem("tor");
-		system ("git clone https://github.com/maxrooted/instashell");
+		system ("git clone https://github.com/maxrooted/instashell .tmp/four");
 		#ifndef __linux__
-		system ("git clone git://github.com/maxrooted/instashell.git");
+		system ("git clone git://github.com/maxrooted/instashell.git .tmp/four");
 		#endif
-		system ("mv instashell/instashell.sh ../hackX/");
-		system ("mv instashell/install.sh ../hackX/");
-		system ("mv instashell/passwords.lst ../hackX");
-		system ("chmod +x install.sh");
-		system ("./install.sh");
-		system ("chmod +x instashell.sh");
+		system ("cp .tmp/four/passwords.lst ../hackX");
+		system ("chmod +x .tmp/four/install.sh");
+		system ("./.tmp/four/install.sh");
+		system ("chmod +x .tmp/four/instashell.sh");
 		system ("systemctl start tor");
 		system ("service tor start");
-		system ("./instashell.sh");
-		system ("rm -rf instashell");
-		system ("rm -rf nottested.lst");
-		system ("rm -rf install.sh");
-		system ("rm -rf instashell.sh");
+		system ("./.tmp/four/instashell.sh");
+		
 		system ("rm -rf passwords.lst");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
