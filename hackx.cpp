@@ -75,7 +75,7 @@ int main()
         system("clear");
         
 	cout << "\033[1;35mVersion Code:\033[1;m" << rd() << endl;
-	printf ("Hi welcome to hackX. \n You can hack in this application\n \033[1;36mFirst you must app in put original page or write Command (mv [NAME FILE] to ~/)\033[1;m\n \033[1;31mAttention:You must access to root , with command (su) or (sudo -s) and write your password\033[1;m \n");
+	printf ("Hi welcome to hackX. \n You can hack in this application\n\033[1;36mFirst you must app in put original page or write Command (mv [NAME FILE] to ~/)\033[1;m\n\033[1;31mAttention:You must access to root ,\n with command (su) or (sudo -s) and write your password\033[1;m \n");
 	cout << " ...please wait..." << endl;
 	sleep(5);
 	
