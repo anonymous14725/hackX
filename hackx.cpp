@@ -481,32 +481,22 @@ int main()
 		InstallSystem("python3");
 		InstallSystem("python-pip");
 		InstallSystem("python3-pip");
-		system ("git clone https://github.com/narbehaj/ssl-checker");
+		system ("git clone https://github.com/narbehaj/ssl-checker .tmp/eleven");
 		#ifndef __linux__
-		system ("git clone git://github.com/narbehaj/ssl-checker.git");
+		system ("git clone git://github.com/narbehaj/ssl-checker.git .tmp/eleven");
 		#endif
-		system ("mv ssl-checker/LICENSE ../hackX/");
-		system ("mv ssl-checker/README.md ../hackX/");
-		system ("mv ssl-checker/requirements.txt ../hackX/");
-		system ("mv ssl-checker/socks.py ../hackX/");
-		system ("mv ssl-checker/socks.pyc ../hackX/");
-		system ("mv ssl-checker/ssl_checker.py ../hackX/");
-		system ("pip install -r requirements.txt");
-		system ("pip3 install -r requirements.txt");
+		
+		system ("pip install -r .tmp/eleven/requirements.txt");
+		system ("pip3 install -r .tmp/eleven/requirements.txt");
+		
 		system ("clear");
 		cout <<  "Enter Website for Check SSL:";
 		cin >> s8;
 		
-		str8="./ssl_checker.py -H "+s8;
+		str8="./.tmp/eleven/ssl_checker.py -H "+s8;
 
 		const char *commands = str8.c_str();
 		system (commands);
-		system ("rm -rf LICENSE");
-		system ("rm -rf README.md");
-		system ("rm -rf requirements.txt");
-		system ("rm -rf socks.py");
-		system ("rm -rf ssl_checker.py");
-		system ("rm -rf ssl-checker");
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
