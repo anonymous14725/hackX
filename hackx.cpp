@@ -100,11 +100,11 @@ int main()
         	InstallSystem("python3-pip");
         	InstallSystem("python-pip");
 		InstallSystem("git");
- 		system ("git clone https://github.com/cyweb/hammer tmp/hammer");
+ 		system ("git clone https://github.com/cyweb/hammer tmp/one");
  		#ifndef __linux__
- 		system ("git clone git://github.com/cyweb/hammer.git tmp/hammer");
+ 		system ("git clone git://github.com/cyweb/hammer.git tmp/one");
  		#endif
-		system ("cp tmp/hammer/headers.txt ../hackX");
+		system ("cp tmp/one/headers.txt ../hackX");
         
         system ("pip3 install queuelib");
 		system ("pip install queuelib");
@@ -118,8 +118,8 @@ int main()
 		cout << "Please Enter thread Number:";
 		cin >> num;
         	
-        	str="python tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
-        	str="python3 tmp/hammer/hammer.py -s "+s+" -p "+spam+" -t "+num;
+        	str="python tmp/one/hammer.py -s "+s+" -p "+spam+" -t "+num;
+        	str="python3 tmp/one/hammer.py -s "+s+" -p "+spam+" -t "+num;
 		
 		
 		const char * commands = str.c_str();
@@ -270,12 +270,12 @@ int main()
 	{
 		InstallSystem("git");
 		InstallSystem("python");
-		system ("git clone https://github.com/stamparm/fetch-some-proxies tmp/fetch-some-proxies");
+		system ("git clone https://github.com/stamparm/fetch-some-proxies tmp/three");
 		#ifndef __linux__
-		system ("git clone git://github.com/stamparm/fetch-some-proxies.git tmp/fetch-some-proxies");
+		system ("git clone git://github.com/stamparm/fetch-some-proxies.git tmp/three");
 		#endif
 		system ("clear");
-		system ("python2 tmp/fetch-some-proxies/fetch.py --threads=300");
+		system ("python2 tmp/three/fetch.py --threads=300");
 		sleep(1);
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
