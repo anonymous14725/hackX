@@ -276,7 +276,6 @@ int main()
 		#endif
 		system ("clear");
 		system ("python2 .tmp/three/fetch.py --threads=300");
-		system ("python .tmp/three/fetch.py --threads=300");
 		sleep(1);
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
