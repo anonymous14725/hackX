@@ -536,12 +536,12 @@ int main()
 		printf ("Other 5 Seconds To Web Browser\n");
 		sleep(5);	
 		system ("clear");	
-		system ("xdg-open http://192.168.1.1");
-		
 		printf ("HELP: Enter the Word \033[1;32m(admin)\033[1;m In Username And Password\n");
 		printf ("2 Steps \033[1;32m(wireless setup)\033[1;m To Click\n");
 		printf ("3 Steps \033[1;32m(wireless security)\033[1;m To Click\n"); 
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
+		system ("xdg-open http://192.168.1.1");
+		
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
 	}
