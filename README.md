@@ -1,9 +1,8 @@
 # HackX
 HackX for hackers of the professional and beginner<br>
 
-<i>Remember it must be hackX, not hackx</i><p>
 This application for hackers without command and without learn is programing language<br>
-Just open the terminal and write the following commands to download and install the program<br></p>
+Just open the terminal and write the following commands to download and install the program<br>
 <i>This program is only for Linux and run is all Linux versions</i>
 # Gallery HackX
  <img src="http://uupload.ir/files/92fl_screenshot_from_2019-07-18_19-56-43.png"><br>
@@ -32,6 +31,7 @@ For download must write commands<br>
 <code>/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"</code><br>
 <code>brew update</code><br>
 # Install Application
+<p><i>Remember it must be hackX, not hackx</i></p>
 For Install must write commands<br>
 <code>git clone http://github.com/anonymous14725/hackX.git</code><br>
 <code>cd hackX</code><br>
