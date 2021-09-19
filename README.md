@@ -1,8 +1,9 @@
 # HackX
 HackX for hackers of the professional and beginner<br>
 
+<i>Remember it must be hackX, not hackx</i><p>
 This application for hackers without command and without learn is programing language<br>
-Just open the terminal and write the following commands to download and install the program<br>
+Just open the terminal and write the following commands to download and install the program<br></p>
 <i>This program is only for Linux and run is all Linux versions</i>
 # Gallery HackX
  <img src="http://uupload.ir/files/92fl_screenshot_from_2019-07-18_19-56-43.png"><br>
