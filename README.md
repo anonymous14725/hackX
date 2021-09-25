@@ -37,11 +37,11 @@ For Install must write commands<br>
 <code>cd hackX</code><br>
 <code>chmod +x hackx.run</code><br>
 <code>./hackx.run</code><br>
-__and Install in freebsd__<br>
+__and Install on freebsd__<br>
 <code>cd hackX</code><br>
 <code>c++ hackx.cpp</code><br>
 <code>./a.out</code><br>
-# Install in Termux
+# Install on Termux
 For install in Termux must write commands under<br>
 <code>pkg install clang</code><br>
 <code>pkg install clang++</code><br>
