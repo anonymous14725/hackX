@@ -42,7 +42,7 @@ __and Install on freebsd__<br>
 <code>c++ hackx.cpp</code><br>
 <code>./a.out</code><br>
 <h1> Install on Termux </h1>
-For install in Termux must write commands under<br>
+For install on Termux must write commands under<br>
 <code>pkg install clang</code><br>
 <code>pkg install clang++</code><br>
 <code>pkg install git</code><br>
