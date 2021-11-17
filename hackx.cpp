@@ -517,7 +517,16 @@ int main()
 		system ("python3 .tmp/twelve/setup.py");
 		system ("python .tmp/twelve/setup.py");
 		
-		system ("./.tmp/twelve/setoolkit");
+		system ("cp .tmp/twelve/setoolkit ../hackX");
+		system ("cp -r .tmp/twelve/src ../hackX");
+		system ("cp -r .tmp/twelve/readme ../hackX");
+		
+		system ("./setoolkit");
+		
+		system ("rm -rf src");
+		system ("rm -rf readme");
+		system ("rm -rf setoolkit");
+		
 		printf ("\033[1;32m((((([[[[[[Success In Load]]]]])))))\033[1;m\n \a");
 		cout <<  __TIME__ << endl;
 		cout <<  "Bye";
