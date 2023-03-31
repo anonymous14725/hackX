@@ -503,6 +503,8 @@ int main()
 	}
 	else if (12 == n)
 	{
+		InstallSystem("python-pip");
+		InstallSystem("python3-pip");
 		InstallSystem("python");
 		InstallSystem("python3");
 		InstallSystem("git");
