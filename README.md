@@ -35,55 +35,69 @@ Hack using the social engineering method and fake port
 For download must write commands  
 
 **1.Debian Linux and Kali Linux and Ubuntu**  
-```apt-get update```  
-```apt-get install git```
+```
+apt-get update && apt-get install git
+```
 
 **2.Fedora Linux for version up to 21 and RedHat and CentOS**  
-```yum update```  
-```yum install git```
+```
+yum update && yum install git
+```
 
 **3.Fedora Linux for version 22 later**  
-```dnf update```  
-```dnf install git```
+```
+dnf update  && dnf install git
+```
 
 **4.Arch Linux and BlackArch**  
-```pacman -Syu```  
-```pacman -S git```
+```
+pacman -Syu && pacman -S git
+```
 
 **5.FreeBSD and Termux**  
-```pkg update```  
-```pkg install git```
+```
+pkg update && pkg install git
+```
 
 **6.OpenBSD**  
-```pkg_add git```
+```
+pkg_add git
+```
 
 **7.MacOS**  
-```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```  
-```brew update```
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)" && brew update
+```
 # Install Application
 
 _Remember it must be hackX, not hackx_
 
-For Install must write commands<br>
-```git clone http://github.com/anonymous14725/hackX.git```  
-```cd hackX```  
-```chmod +x hackx.run```  
-```./hackx.run```
+For Install must write commands: (after write every command press Enter key)  
+```
+git clone http://github.com/anonymous14725/hackX.git 
+cd hackX
+chmod +x hackx.run 
+./hackx.run
+```
 
 __and Install on freebsd__  
-```cd hackX```  
-```c++ hackx.cpp```  
-```./a.out```
+```
+cd hackX
+c++ hackx.cpp
+./a.out
+```
 
 # Install on Termux
-For install on Termux must write commands under  
-```pkg install clang```  
-```pkg install clang++```  
-```pkg install git```  
-```git clone http://github.com/anonymous14725/hackX.git```  
-```cd hackX```  
-```c++ hackx.cpp```  
-```./a.out```
+For install on Termux must write commands under (after write every command press Enter key) 
+```
+pkg install clang  
+pkg install clang++ 
+pkg install git
+git clone http://github.com/anonymous14725/hackX.git 
+cd hackX
+c++ hackx.cpp
+./a.out
+```
 
 __ Warning:You must app in put original page or write Command (mv [NAME FILE] to ~/) __  
 Attantion:You must access to root , with command (su) and write your password  
